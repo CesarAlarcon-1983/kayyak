@@ -13,11 +13,20 @@ var Header = function() {
   var profilesPages = $('.profile-page');
   var closeProjectButton = $('.project-page__hero__close-button')
   var closeProfileButton = $('.profile-page__hero__close-button')
+  var menuItems = $('.header__item');
 
   menuOpen.on('click', function(){
       header.toggleClass('-open');
       body.toggleClass('-hideOverflow');
   });
+
+  menuItems.on('click', function() {
+    header.removeClass('-open');
+    projectsPages.removeClass('-visible');
+    profilesPages.removeClass('-visible');
+    projectsContainer.removeClass('-visible')
+    body.removeClass('-hideOverflow');
+  })
   
   $(window).on('scroll', function() {
       if(window.scrollY > 150) {
@@ -51,7 +60,6 @@ var Header = function() {
       return $(this).data('content') == index
     })
 
-    // var projectHeight = projectToShow
     projectsContainer.addClass('-visible')
     profileToShow.addClass('-visible');
     body.addClass('-hideOverflow');
@@ -62,6 +70,39 @@ var Header = function() {
     projectsContainer.removeClass('-visible')
     body.removeClass('-hideOverflow');
   })
+
+  $('a[href*="#"]')
+  // Remove links that don't actually link to anything
+  .not('[href="#buscar"]')
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .not('[href="#registro"]')
+  .not('[href="#login"]')
+  .click(function(event) {
+      // On-page links
+      if (
+          location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+          &&
+          location.hostname == this.hostname
+      ) {
+        // Figure out element to scroll to
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+          // Does a scroll target exist?
+          if (target.length) {
+              // Only prevent default if animation is actually gonna happen
+              event.preventDefault();
+              $('html, body').animate({
+                  scrollTop: target.offset().top + -69
+              }, 1000, function() {
+              // Callback after animation
+              // Must change focus!
+                  var $target = $(target);
+                  $target.focus();
+              });
+          }
+      }
+  });
 };
 
 module.exports = Header;

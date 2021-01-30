@@ -20,7 +20,7 @@
     ],
     "image": "/images/home/crew-2.jpg",
     "pais": "",
-    "website": ""
+    "mail": "Antonia@kayyalventures.com"
   },
   {
     "titulo": "Lorem Ipsum",
@@ -30,7 +30,7 @@
     ],
     "image": "/images/home/crew-3.jpg",
     "pais": "",
-    "website": ""
+    "mail": "evelyn@kayyakventures.com"
   },
   {
     "titulo": "Lorem Ipsum",
@@ -40,6 +40,6 @@
     ],
     "image": "/images/home/crew-4.jpg",
     "pais": "",
-    "website": ""
+    "mail": "andres@kayyalventures.com"
   }
 ]

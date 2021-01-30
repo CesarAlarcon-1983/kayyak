@@ -7,14 +7,11 @@
   opacity: 0;
   pointer-events: none;
   overflow: scroll;
-  height: 90vh;
+  height: 100vh;
   position: absolute;
   top: 0;
   left: 0;
-
-  @include mq(md) {
-    height: calc(100vh - 80px);
-  }
+  height: calc(100vh - 70px);
 
   &.-visible {
     opacity: 1;
@@ -67,6 +64,7 @@
         border-radius: 50%;
         z-index: 2;
         background: transparent;
+        cursor: pointer;
 
         span {
           position: absolute;
@@ -219,6 +217,39 @@
         left: 50%;
         transform: translate3d(-50%, -50%, 0);
         height: 100%;
+      }
+    }
+  }
+
+  &__footer {
+    &__container {
+      display: flex;
+      padding: 20px 15px;
+      height: 10vh;
+      justify-content: space-between;
+      border-top: 1px solid $lightestGray;
+  
+      @include mq(md) {
+        padding: 40px 5vw;
+        height: 100px;
+      }
+    }
+  
+    &__logo {
+      height: 100%;
+      display: block;
+  
+      img {
+        height: 100%;
+      }
+    }
+  
+    &__social {
+      display: block;
+  
+      i {
+        font-size: 24px;
+        color: $corpBlack;
       }
     }
   }

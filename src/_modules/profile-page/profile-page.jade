@@ -25,4 +25,11 @@ mixin profile-page(data, index)
                   .profile-page__content__details-text=data.pais
               .profile-page__content__details-wrapper
                   .profile-page__content__details-title E-mail Address
-                  .profile-page__content__details-text=data.mail
+                  a.profile-page__content__details-text(href=`mailto:${data.mail}` target="_blank")=data.mail
+
+    footer.profile-page__footer
+      .profile-page__footer__container
+        a.profile-page__footer__logo(href="/")
+          img(src="/images/logo-black.png")
+        a.profile-page__footer__social(href="https://www.linkedin.com/company/kayyak-ventures/" target="_blank")
+          i.fa.fa-linkedin

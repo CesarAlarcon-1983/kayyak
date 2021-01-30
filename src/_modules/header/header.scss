@@ -10,8 +10,8 @@
     background: $white;
     width: 100%;
     z-index: 1000;
-    height: 10vh;
-    padding: 20px 15px;
+    height: 70px;
+    padding: 22px 15px;
     
     @include mq(md) {
         padding: 0 5vw;
@@ -97,9 +97,8 @@
             font-weight: 700;
 
             @include mq(md) {
-                color: $black;
-                font-size: 20px;
-                font-weight: 500;
+                color: $corpBlack;
+                font-size: 18px;
             }            
         }
     }
@@ -166,7 +165,7 @@
 
     &.-scrolled {
         @include mq(md) {
-            height: 80px;
+            height: 70px;
         }
     }
 }
