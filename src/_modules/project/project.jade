@@ -1,0 +1,14 @@
+mixin project(data, index, length)
+  .project(class=data.color)
+    .project__content
+      .project__wrapper
+        .project__index-container
+          span.project__index=index
+          span.project__total=length
+        h2.project__title=data.titulo
+        p.project__quote=`"${data.cita_fundador}"`
+        p.project__quoter=data.fundadores[0]
+        p.project__mision=data.mision
+        button.project__more-button(data-target=index) See more
+    .project__image
+      img(src=data.images.main)

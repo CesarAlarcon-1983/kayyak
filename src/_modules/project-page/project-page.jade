@@ -1,0 +1,34 @@
+mixin project-page(data, index)
+  .project-page(class=data.color data-content=index)
+    .project-page__hero
+      .project-page__hero__container
+        .project-page__hero__title=data.titulo
+      .project-page__hero__container
+        img(src=data.images.main)
+        button.project-page__hero__close-button
+          span
+          span
+    .project-page__content
+      .container
+        .row
+          .col-24.col-md-14.offset-md-1
+            .project-page__content__text-container
+              each paragraph in data.texto
+                p.project-page__content__text=paragraph
+          .col-24.col-md-7.offset-md-2
+            .project-page__content__details
+              .project-page__content__details-wrapper
+                  .project-page__content__details-title Country
+                  .project-page__content__details-text=data.pais
+              .project-page__content__details-wrapper
+                  .project-page__content__details-title Founders
+                  each fundador in data.fundadores
+                    .project-page__content__details-text=fundador
+              .project-page__content__details-wrapper
+                  .project-page__content__details-title Web site
+                  .project-page__content__details-text=data.website
+      .project-page__images
+        .project-page__images__left
+          img(src=data.images.bottom_left)
+        .project-page__images__right
+          img(src=data.images.bottom_right)

@@ -1,0 +1,511 @@
+.project-page {
+  $p: &;
+  @include trans;
+
+  width: 100%;
+  background: $white;
+  opacity: 0;
+  pointer-events: none;
+  overflow: scroll;
+  height: 90vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  @include mq(md) {
+    height: calc(100vh - 80px);
+  }
+
+  &.-visible {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  &__hero {
+    display: flex;
+    flex-wrap: wrap;
+
+    @include mq(md) {
+      flex-wrap: nowrap;
+    }
+
+    &__container {
+      width: 50%;
+      position: relative;
+      height: 0;
+      padding-bottom: 40%;
+      z-index: 1;
+      
+      @include mq(md) {
+        overflow: hidden;
+        width: 50%;
+        padding-bottom: 20%;
+      }
+      
+      img {
+        display: none;
+
+        @include mq(md) {
+          display: block;
+          position: absolute;
+          top: 0;
+          right: 0;
+          // transform: translateY(-50%);
+          width: auto;
+          height: auto;
+        }
+      }
+
+      button {
+        position: absolute;
+        top: 50%;
+        right: 15px;
+        transform: translate3d(0, -50%, 0);
+        width: 50px;
+        height: 50px;
+        border: 2px solid $white;
+        border-radius: 50%;
+        z-index: 2;
+        background: transparent;
+
+        span {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 1px;
+          height: 50%;
+          background: $white;
+          display: block;
+          
+          &:nth-child(1) {
+            transform: translate3d(-50%, -50%, 0) rotate(45deg);
+          }
+
+          &:nth-child(2) {
+            transform: translate3d(-50%, -50%, 0) rotate(-45deg);
+          }
+        }
+
+        @include mq(md) {
+          right: 5vw;
+          left: auto;
+          transform: translate3d(0, -50%, 0);
+          width: 70px;
+          height: 70px;
+        }
+      }
+      
+      &:nth-child(1) {
+        width: 70%;
+
+        @include mq(md) {
+          width: 50%;
+          // order: 1;
+        }
+      }
+
+      &:nth-child(2) {
+        width: 30%;
+
+        @include mq(md) {
+          width: 50%;
+        }
+      }
+    }
+
+    &__title {
+      font-size: 30px;
+      color: $white;
+      font-weight: 700;
+      position: absolute;
+      top: 50%;
+      left: 15px;
+      transform: translate3d(0, -50%, 0);
+      white-space: nowrap;
+
+      @include mq(md) {
+        padding-left: 5vw;
+        font-size: 60px;
+        left: auto;
+        transform: translate3d(0, -50%, 0);
+      }
+    }
+  }
+
+  &__content {
+
+    &__text-container {
+      padding: 50px 0;
+
+      @include mq(md) {
+        padding: 100px 0;
+      }
+    }
+
+    &__details {
+      @include mq(md) {
+        padding: 100px 0;
+      }
+    }
+
+    &__text {
+      font-size: 16px;
+      margin: 0;
+      margin-bottom: 18px;
+      line-height: 1.5;
+      font-weight: 500;
+
+      @include mq(md) {
+        font-size: 20px;
+      }
+    }
+
+    &__details-wrapper {
+      margin-bottom: 40px;
+    } 
+    
+    &__details-title {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    &__details-text {
+      margin-bottom: 5px;
+    }
+  }
+
+  &__images {
+    @include mq(md) {
+      display: flex;
+      flex-wrap: nowrap;
+      overflow: hidden;
+    }
+
+    &__left {
+      width: 100%;
+      height: auto;
+
+      @include mq(md) {
+        position: relative;
+        overflow: hidden;
+        padding-bottom: 33.33%;
+        width: 66.66%;
+        height: 0;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+    }
+
+    &__right {
+      overflow: hidden;
+      width: 100%;
+      height: 0;
+      padding-bottom: 100%;
+      position: relative;
+      
+      @include mq(md) {
+        width: 33.33%;
+        padding-bottom: 33.37%;
+      }
+
+      img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate3d(-50%, -50%, 0);
+        height: 100%;
+      }
+    }
+  }
+
+  &.light-blue {
+    #{$p}__hero {
+      &__container {
+        &:nth-child(1) {
+          background: $lightBlue;
+        }
+  
+        &:nth-child(2) {
+          &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: $lightBlue;
+            
+            @include mq(md) {
+              opacity: .9;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.blue {
+    #{$p}__hero {
+      &__container {
+        &:nth-child(1) {
+          background: $blue;
+        }
+  
+        &:nth-child(2) {
+          &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: $blue;
+            
+            @include mq(md) {
+              opacity: .9;
+            }
+          }
+        }
+      }
+    }
+
+    }  
+  &.purple {
+    #{$p}__hero {
+      &__container {
+        &:nth-child(1) {
+          background: $purple;
+        }
+  
+        &:nth-child(2) {
+          &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: $purple;
+            
+            @include mq(md) {
+              opacity: .9;
+            }
+          }
+        }
+      }
+    }
+
+    }  
+  &.dark-blue {
+    #{$p}__hero {
+      &__container {
+        &:nth-child(1) {
+          background: $darkBlue;
+        }
+  
+        &:nth-child(2) {
+          &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: $darkBlue;
+            
+            @include mq(md) {
+              opacity: .9;
+            }
+          }
+        }
+      }
+    }
+
+    }  
+  &.mid-blue {
+    #{$p}__hero {
+      &__container {
+        &:nth-child(1) {
+          background: $midBlue;
+        }
+  
+        &:nth-child(2) {
+          &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: $midBlue;
+            
+            @include mq(md) {
+              opacity: .9;
+            }
+          }
+        }
+      }
+    }
+
+    }  
+  &.brown {
+    #{$p}__hero {
+      &__container {
+        &:nth-child(1) {
+          background: $brown;
+        }
+  
+        &:nth-child(2) {
+          &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: $brown;
+            
+            @include mq(md) {
+              opacity: .9;
+            }
+          }
+        }
+      }
+    }
+
+    }  
+  &.light-purple {
+    #{$p}__hero {
+      &__container {
+        &:nth-child(1) {
+          background: $lightPurple;
+        }
+  
+        &:nth-child(2) {
+          &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: $lightPurple;
+            
+            @include mq(md) {
+              opacity: .9;
+            }
+          }
+        }
+      }
+    }
+
+    }  
+  &.turquoise {
+    #{$p}__hero {
+      &__container {
+        &:nth-child(1) {
+          background: $turquoise;
+        }
+  
+        &:nth-child(2) {
+          &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: $turquoise;
+            
+            @include mq(md) {
+              opacity: .9;
+            }
+          }
+        }
+      }
+    }
+
+    }  
+  &.green {
+    #{$p}__hero {
+      &__container {
+        &:nth-child(1) {
+          background: $green;
+        }
+  
+        &:nth-child(2) {
+          &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: $green;
+            
+            @include mq(md) {
+              opacity: .9;
+            }
+          }
+        }
+      }
+    }
+
+    }  
+  &.dark-brown {
+    #{$p}__hero {
+      &__container {
+        &:nth-child(1) {
+          background: $darkBrown;
+        }
+  
+        &:nth-child(2) {
+          &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: $darkBrown;
+            
+            @include mq(md) {
+              opacity: .9;
+            }
+          }
+        }
+      }
+    }
+
+    }  
+  &.lightest-purple {
+    #{$p}__hero {
+      &__container {
+        &:nth-child(1) {
+          background: $lightestPurple;
+        }
+  
+        &:nth-child(2) {
+          &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: $lightestPurple;
+            
+            @include mq(md) {
+              opacity: .9;
+            }
+          }
+        }
+      }
+    }
+  }
+    }

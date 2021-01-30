@@ -1,3 +1,32 @@
 .footer {
-    
+  &__container {
+    display: flex;
+    padding: 20px 15px;
+    height: 10vh;
+    justify-content: space-between;
+    border-top: 1px solid $lightestGray;
+
+    @include mq(md) {
+      padding: 40px 5vw;
+      height: 100px;
+    }
+  }
+
+  &__logo {
+    height: 100%;
+    display: block;
+
+    img {
+      height: 100%;
+    }
+  }
+
+  &__social {
+    display: block;
+
+    i {
+      font-size: 24px;
+      color: $corpBlack;
+    }
+  }
 }

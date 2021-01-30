@@ -1,0 +1,28 @@
+mixin profile-page(data, index)
+  .profile-page(class=data.color data-content=index)
+    .profile-page__hero
+      .profile-page__hero__container
+        .profile-page__hero__wrapper
+          p.profile-page__hero__title=data.titulo
+          h3.profile-page__hero__nombre=data.nombre
+          a.profile-page__hero__social(href="#" target="_blank")
+            i.fa.fa-linkedin
+        img(src=data.image)
+        button.profile-page__hero__close-button
+          span
+          span
+    .profile-page__content
+      .container
+        .row
+          .col-24.col-md-14.offset-md-1
+            .profile-page__content__text-container
+              each paragraph in data.texto
+                p.profile-page__content__text=paragraph
+          .col-24.col-md-7.offset-md-2
+            .profile-page__content__details
+              .profile-page__content__details-wrapper
+                  .profile-page__content__details-title Country
+                  .profile-page__content__details-text=data.pais
+              .profile-page__content__details-wrapper
+                  .profile-page__content__details-title E-mail Address
+                  .profile-page__content__details-text=data.mail

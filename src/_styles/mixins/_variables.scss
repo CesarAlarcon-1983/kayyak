@@ -1,13 +1,23 @@
 $white: #fff;
 $black: #000;
-$corpBlack: #3e372c;
+$corpBlack: #25292B;
 $darkestGray: #333;
 $darkGray: #787871;
 $midGray: #999;
-$lightGray: #ebebeb;
+$lightGray: #E2E2E2;
 $lightestGray: #f4f7f8;
-$blue: #053f7a;
+$blue: #0057DC;
+$lightBlue: #2487CB;
 $blueGray: #bbc9c9;
+$purple: #720AFD;
+$darkBlue: #374B94;
+$midBlue :#1B74EA;
+$brown: #958377;
+$lightPurple: #8046F0;
+$turquoise: #2EABC7;
+$green: #2EA79E;
+$darkBrown: #4F4F4F;
+$lightestPurple: #7979FD;
 
 $mainColor: $blue;
 $link: $mainColor;
@@ -35,4 +45,5 @@ $duration: 0.3s;
 $easing: cubic-bezier(.785, .135, .15, .86);
 $easingLight: ease;
 
-$mainFont: 'Open Sans', sans-serif;
+$mainFont: 'Raleway', sans-serif;
+$altFont: 'Inter', sans-serif;

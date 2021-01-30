@@ -1,0 +1,96 @@
+.contacto {
+  overflow: hidden;
+  
+  &__hero {
+    margin-bottom: 50px;
+
+    @include mq(md) {
+      margin-bottom: 100px;
+    }
+
+    img {
+      width: 150%;
+
+      @include mq(md) {
+        width: 100%;
+      }
+    }
+  }
+
+  &__details {
+    &__container {
+      margin-bottom: 100px;
+    }
+    &__title,
+    &__form-title {
+      font-size: 26px;
+      font-weight: 700;
+      margin: 0;
+      margin-bottom: 20px;
+      color: $corpBlack;
+      
+      @include mq(md) {
+        font-size: 40px;
+      }
+    }
+
+    &__text {
+      color: $corpBlack;
+      display: block;
+      font-size: 16px;
+      margin-bottom: 10px;
+      font-weight: 500;
+
+      @include mq(md) {
+        font-size: 20px;
+      }
+    }
+
+    &__phone {
+      margin-top: 40px;
+      display: block;
+      text-decoration: none;
+      color: $corpBlack;
+      font-size: 24px;
+      font-weight: 500;
+    }
+
+    &__form {
+      margin-bottom: 50px;
+
+      @include mq(md) {
+        margin-bottom: 100px;
+      }
+    }
+
+    &__form-input {
+      margin-top: 50px;
+      width: 100%;
+      border-bottom: 1px solid $corpBlack;
+      height: 50px;
+      display: flex;
+
+      @include mq(md) {
+        width: 70%;
+      }
+
+      input {
+        height: 100%;
+        width: 100%;
+        border: none;
+        font-size: 24px;
+        outline: none;
+      }
+
+      button {
+        background: transparent;
+        border: none;
+        color: $blue;
+        font-size: 18px;
+        font-weight: 500;
+        text-transform: uppercase;
+        outline: none;
+      }
+    }
+  }
+}

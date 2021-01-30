@@ -1,4 +1,68 @@
+include ./_modules/project/project
+include ./_modules/slider/slider
+include ./_modules/project-page/project-page
+include ./_modules/profile-page/profile-page
+
 extends _layouts/base
 
 block content
-    main.home
+  main.home
+    section.home__purpose#purpose
+      .home__purpose__content
+        .home__purpose__emblem
+          img(src="/images/emblem.png")
+        h2.home__purpose__title Our aim is to improve the life of people and our planet by supporting exceptional entrepreneurs and the projects the live for.
+        span.home__purpose__text View Portfolio
+        a.home__purpose__scroll-button(href="#portfolio")
+    section.home__portfolio#portfolio
+      +slider("home__portfolio__slider")
+        each project, index in site.data.projects
+          .home__portfolio__slide
+            +project(project, (index + 1), site.data.projects.length)
+    section.home__investment-philosophy#investment-philosophy
+      .container
+        .row
+          .col-24.col-md-18.offset-md-3
+            h2.home__investment-philosophy__title Investment Philosophy
+            span.home__investment-philosophy__logo Kayyak
+            p.home__investment-philosophy__text We make long-term bets on contrarians and outsiders. We partner with mission-driven entrepreneurs who have a creative imagination and a radical vision about how the world should look like. They thrive in chaos and are extraordinarily resilient.
+            p.home__investment-philosophy__text We are highly selective in who we invest in, focusing on a handful of entrepreneurs per year in order to dedicate our full energy and heart to help them. We like to be artisans.
+            p.home__investment-philosophy__text We typically invest in companies that are generating revenue with attractive margins and/or unit economics and capital-efficient business models.
+            p.home__investment-philosophy__text We focus on Seed and Series A rounds. We are prepared to invest $1 million to $2 million of capital in each new investment and expect to continue investing in our portfolio companies in successive rounds. We are flexible on the mechanics. We can lead or participate.
+            p.home__investment-philosophy__text We primarily invest in companies based in Latin America, but will also back businesses based in North America and Europe to be connected, learn, and build bridges to our entrepreneurs.
+            p.home__investment-philosophy__text We are impact investors.We seek to invest in companies and exceptional entrepreneurs that have the purpose to solve our biggest social and environmental challenges by developing businesses that are competitive, scalable and sustainable.
+            p.home__investment-philosophy__text We are active partners in building value and look to leverage our resources and our relationships to build market leaders. You might think VC is all about money. For us, it’s all about people.
+
+    section.home__team#team
+      .home__team__container
+        .home__team__image  
+          img(src="/images/home/crew-1.jpg")
+        .home__team__wrapper 
+          span.home__team__name Cristóbal Silva
+          span.home__team__profile-button(data-target=1) View profile
+
+      .home__team__container
+        .home__team__image  
+          img(src="/images/home/crew-2.jpg")
+        .home__team__wrapper 
+          span.home__team__name Antonia Brahm
+          span.home__team__profile-button(data-target=2) View profile
+
+      .home__team__container
+        .home__team__image  
+          img(src="/images/home/crew-3.jpg")
+        .home__team__wrapper 
+          span.home__team__name Evelyn Von Bischhoffshausen
+          span.home__team__profile-button(data-target=3) View profile
+
+      .home__team__container
+        .home__team__image  
+          img(src="/images/home/crew-4.jpg")
+        .home__team__wrapper 
+          span.home__team__name Andrés Pesce
+          span.home__team__profile-button(data-target=4) View profile
+  .projects-container
+    each project, index in site.data.projects
+      +project-page(project, (index + 1))
+    each profile, index in site.data.profiles
+      +profile-page(profile, (index + 1))

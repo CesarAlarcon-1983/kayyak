@@ -3,13 +3,36 @@
 // Constructor
 var Slider = function() {
     var slider = $('._slider');
-    if (slider) {
+    if (slider && window.innerWidth > 760) {
         slider.each(function(){
             $(this).slick({
-                dots: true,
-                fade: true,
-                arrows:  false,
-                autoplay: true
+                dots: false,
+                fade: false,
+                arrows:  true,
+                autoplay: false,
+                vertical: true,
+                verticalSwiping: true,
+                infinite: false,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                responsive: [
+                    {
+                      breakpoint: 768,
+                      settings: {
+                        arrows: false,
+                        centerMode: false,
+                        slidesToShow: 1
+                      }
+                    },
+                    {
+                      breakpoint: 480,
+                      settings: {
+                        arrows: false,
+                        centerMode: false,
+                        slidesToShow: 1
+                      }
+                    }
+                  ]
             });
         });
     }
