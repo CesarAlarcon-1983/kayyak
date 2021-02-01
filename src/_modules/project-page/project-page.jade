@@ -26,7 +26,7 @@ mixin project-page(data, index)
                     .project-page__content__details-text=fundador
               .project-page__content__details-wrapper
                   .project-page__content__details-title Web site
-                  .project-page__content__details-text=data.website
+                  a.project-page__content__details-text(href=data.website)=data.website
       .project-page__images
         .project-page__images__left
           img(src=data.images.bottom_left)

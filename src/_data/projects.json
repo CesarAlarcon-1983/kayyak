@@ -39,8 +39,8 @@
       "bottom_right": "/images/webdox/webdox-1.jpg"
     },
     "color": "blue",
-    "pais": "",
-    "website": ""
+    "pais": "Santiago, Chile",
+    "website": "https://www.webdoxclm.com/"
   },
   {
     "titulo": "Xepelin",
@@ -59,8 +59,8 @@
       "bottom_right": "/images/xepelin/xepelin-1.jpg"
     },
     "color": "purple",
-    "pais": "",
-    "website": ""
+    "pais": "Santiago, Chile",
+    "website": "https://www.xepelin.com/sobre-nosotros.html"
   },
   {
     "titulo": "Foodology",
@@ -77,8 +77,8 @@
       "bottom_right": "/images/foodology/foodology-1.jpg"
     },
     "color": "dark-blue",
-    "pais": "",
-    "website": ""
+    "pais": "Bogotá, Colombia",
+    "website": "https://www.foodology.com.co/team"
   },
   {
     "titulo": "Destácame",
@@ -98,8 +98,8 @@
       "bottom_right": "/images/destacame/destacame-1.jpg"
     },
     "color": "mid-blue",
-    "pais": "",
-    "website": ""
+    "pais": "Santiago, Chile",
+    "website": "www.destacame.cl"
   },
   {
     "titulo": "F4F",
@@ -117,8 +117,8 @@
       "bottom_right": "/images/f4f/f4f-1.jpg"
     },
     "color": "brown",
-    "pais": "",
-    "website": ""
+    "pais": "Talca, Chile",
+    "website": "www.f4f.cl"
   },
   {
     "titulo": "Migrante",
@@ -137,8 +137,8 @@
       "bottom_right": "/images/migrante/migrante-1.jpg"
     },
     "color": "light-purple",
-    "pais": "",
-    "website": ""
+    "pais": "Santiago, Chile",
+    "website": "www.migrante.com"
   },
   {
     "titulo": "Co-Work Latam",
@@ -157,8 +157,8 @@
       "bottom_right": "/images/cowork/cowork-1.jpg"
     },
     "color": "turquoise",
-    "pais": "",
-    "website": ""
+    "pais": "Santiago, Chile",
+    "website": "www.coworklatam.com"
   },
   {
     "titulo": "AgroUrbana",
@@ -177,8 +177,8 @@
       "bottom_right": "/images/agro-urbana/agrourbana-1.jpg"
     },
     "color": "green",
-    "pais": "",
-    "website": ""
+    "pais": "Santiago, Chile",
+    "website": "www.agrourbana.ag"
   },
   {
     "titulo": "Humatics",
@@ -199,8 +199,8 @@
       "bottom_right": "/images/humatics/humatics-1.jpg"
     },
     "color": "dark-brown",
-    "pais": "",
-    "website": ""
+    "pais": "Waltham, Massachusetts, USA",
+    "website": "www.humatics.com"
   },
   {
     "titulo": "Cytovale",
@@ -219,7 +219,7 @@
       "bottom_right": "/images/cytovale/cytovale-1.jpg"
     },
     "color": "lightest-purple",
-    "pais": "",
-    "website": ""
+    "pais": "San Francisco, USA",
+    "website": "www.cytovale.com"
   }
 ]

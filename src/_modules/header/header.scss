@@ -97,7 +97,7 @@
             font-weight: 700;
 
             @include mq(md) {
-                color: $corpBlack;
+                color: $corpBlack + #333;
                 font-size: 18px;
             }            
         }
