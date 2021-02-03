@@ -1,5 +1,5 @@
 mixin project(data, index, length)
-  .project(class=data.color)
+  .project(class=data.color data-ref=(index - 1))
     .project__content
       .project__wrapper
         .project__index-container

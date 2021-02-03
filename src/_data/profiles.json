@@ -8,7 +8,8 @@
     ],
     "image": "/images/home/crew-1.jpg",
     "pais": "Santiago, Chile",
-    "mail": "cristobal@kayyakventures.com"
+    "mail": "cristobal@kayyakventures.com",
+    "linkedin": "https://www.linkedin.com/in/cristobal-silva-lombardi/"
   },
   {
     "titulo": "Lorem Ipsum",
@@ -19,8 +20,9 @@
       "I want to contribute to mobilize capital towards a sustainable path to development, being part of a leading company in the region in doing so."
     ],
     "image": "/images/home/crew-2.jpg",
-    "pais": "",
-    "mail": "Antonia@kayyalventures.com"
+    "pais": "Santiago, Chile",
+    "mail": "Antonia@kayyalventures.com",
+    "linkedin": "https://www.linkedin.com/in/antonia-brahm-justiniano-12141620/"
   },
   {
     "titulo": "Lorem Ipsum",
@@ -29,8 +31,9 @@
       "Before Kayyak, I developed my professional career working in a traditional investment management role. While doing my MBA at Columbia Business School, I discovered that even though I was passionate about investing, I wanted to develop my skills and learn new ones from another perspective, having a real sense of purpose. What motivates me to join Kayyak, was the opportunity to build something from scratch, help in the establishment of new companies and technologies that will shape the future economic growth in a sustainable way and support a collaborative VC ecosystem in the region."
     ],
     "image": "/images/home/crew-3.jpg",
-    "pais": "",
-    "mail": "evelyn@kayyakventures.com"
+    "pais": "Santiago, Chile",
+    "mail": "evelyn@kayyakventures.com",
+    "linkedin": "https://www.linkedin.com/in/evelyn-von-bischhoffshausen-70098660/"
   },
   {
     "titulo": "Lorem Ipsum",
@@ -39,7 +42,8 @@
       "Before joining the founding team of Kayyak, I had the privilege to work for over a decade in Fundación Chile helping to foster innovation and entrepreneurship as a driver of sustainable development for Chile. I think we need to mobilize more private financing into innovation and impact investment to support exceptional entrepreneurs that hold the key to solve many old challenges with new answers. That is why I am in Kayyak now; I want to contribute to a new wave of progress in Latam that will be driven by innovation and entrepreneurs. I take this challenge with humbleness and the conviction that VC will make a big change in Latam."
     ],
     "image": "/images/home/crew-4.jpg",
-    "pais": "",
-    "mail": "andres@kayyalventures.com"
+    "pais": "Santiago, Chile",
+    "mail": "andres@kayyalventures.com",
+    "linkedin": "https://www.linkedin.com/in/andres-pesce-04598611/"
   }
 ]

@@ -11,9 +11,9 @@ block content
       .home__purpose__content
         .home__purpose__emblem
           img(src="/images/emblem.png")
-        h2.home__purpose__title Our aim is to improve the life of people and our planet by supporting exceptional entrepreneurs and the projects the live for.
+        h2.home__purpose__title Our aim is to improve the life of people and our planet by supporting exceptional entrepreneurs and the projects they live for.
         span.home__purpose__text View Portfolio
-        a.home__purpose__scroll-button(href="#portfolio")
+        a.home__purpose__scroll-button.-js-link(href="#portfolio")
     section.home__portfolio#portfolio
       +slider("home__portfolio__slider")
         each project, index in site.data.projects
@@ -32,7 +32,6 @@ block content
             p.home__investment-philosophy__text We primarily invest in companies based in Latin America, but will also back businesses based in North America and Europe to be connected, learn, and build bridges to our entrepreneurs.
             p.home__investment-philosophy__text We are impact investors.We seek to invest in companies and exceptional entrepreneurs that have the purpose to solve our biggest social and environmental challenges by developing businesses that are competitive, scalable and sustainable.
             p.home__investment-philosophy__text We are active partners in building value and look to leverage our resources and our relationships to build market leaders. You might think VC is all about money. For us, it’s all about people.
-
     section.home__team#team
       .home__team__container
         .home__team__image  

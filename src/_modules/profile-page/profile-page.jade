@@ -5,7 +5,7 @@ mixin profile-page(data, index)
         .profile-page__hero__wrapper
           p.profile-page__hero__title=data.titulo
           h3.profile-page__hero__nombre=data.nombre
-          a.profile-page__hero__social(href="#" target="_blank")
+          a.profile-page__hero__social(href=data.linkedin target="_blank")
             i.fa.fa-linkedin
         img(src=data.image)
         button.profile-page__hero__close-button

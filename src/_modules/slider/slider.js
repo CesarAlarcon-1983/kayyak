@@ -8,7 +8,7 @@ var Slider = function() {
             $(this).slick({
                 dots: false,
                 fade: false,
-                arrows:  true,
+                arrows:  false,
                 autoplay: false,
                 vertical: true,
                 verticalSwiping: true,

@@ -9,7 +9,7 @@
     left: 0;
     background: $white;
     width: 100%;
-    z-index: 1000;
+    z-index: 10000;
     height: 70px;
     padding: 22px 15px;
     
@@ -28,15 +28,17 @@
     &__logo {
         @include trans;
 
-        height: 100%;
-        z-index: 1001;
+        height: 40px;
+        z-index: 10001;
 
         @include mq(md) {
-            height: 25%;
+            height: 40px;
         }
 
         img {
-            height: 100%;
+            @include trans;
+
+            height: 40px;
             width: auto;
         }
     }
@@ -54,7 +56,7 @@
         justify-content: center;
         align-items: center;
         background: $blue;
-        z-index: 1000;
+        z-index: 10000;
 
         @include mq(md) {
             position: static;
@@ -97,7 +99,7 @@
             font-weight: 700;
 
             @include mq(md) {
-                color: $corpBlack + #333;
+                color: $corpBlack + #666;
                 font-size: 18px;
             }            
         }
@@ -106,7 +108,7 @@
     &__hamburguer {
         cursor: pointer;
         width: 25px;
-        z-index: 1001;
+        z-index: 10001;
 
         @include mq(md) {
             display: none;
@@ -166,6 +168,18 @@
     &.-scrolled {
         @include mq(md) {
             height: 70px;
+        }
+
+        #{$h}__logo {
+            @include mq(md) {
+                height: 20px;
+            }
+
+            img {
+                @include mq(md) {
+                    height: 20px;
+                }
+            }
         }
     }
 }
