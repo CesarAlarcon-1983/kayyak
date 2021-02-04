@@ -11,14 +11,14 @@ block content
       .home__purpose__content
         .home__purpose__emblem
           img(src="/images/emblem.png")
-        h2.home__purpose__title Our aim is to improve the life of people and our planet by supporting exceptional entrepreneurs and the projects they live for.
+        h2.home__purpose__title We seek to invest in exceptional entrepreneurs whose purpose is to solve today’s greatest challenges.
         span.home__purpose__text View Portfolio
         a.home__purpose__scroll-button.-js-link(href="#portfolio")
     section.home__portfolio#portfolio
-      +slider("home__portfolio__slider")
-        each project, index in site.data.projects
-          .home__portfolio__slide
-            +project(project, (index + 1), site.data.projects.length)
+      //- +slider("home__portfolio__slider")
+      each project, index in site.data.projects
+        .home__portfolio__slide
+          +project(project, (index + 1), site.data.projects.length)
     section.home__investment-philosophy#investment-philosophy
       .container
         .row

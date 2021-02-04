@@ -15,12 +15,12 @@ var Header = function() {
   var closeProfileButton = $('.profile-page__hero__close-button')
   var menuItems = $('.header__item');
   var slider = $('.home__portfolio__slider');
-  body.addClass('-hideOverflow');
+  // body.addClass('-hideOverflow');
 
   if(window.innerWidth < 720 || window.location.pathname === '/contacto/' || window.location.hash === '#investment-philosophy' || window.location.hash === '#team') {
     body.removeClass('-hideOverflow');
   }
-  console.log(window.location.hash)
+
   menuOpen.on('click', function(){
       header.toggleClass('-open');
       body.toggleClass('-hideOverflow');
@@ -35,16 +35,15 @@ var Header = function() {
       body.removeClass('-hideOverflow');
     }
 
-    if(window.innerWidth > 720) {
-      projectsPages.removeClass('-visible');
-      profilesPages.removeClass('-visible');
-      projectsContainer.removeClass('-visible')
+    // if(window.innerWidth > 720) {
+    //   projectsPages.removeClass('-visible');
+    //   profilesPages.removeClass('-visible');
+    //   projectsContainer.removeClass('-visible')
 
-      console.log(this)
-      if($(this).children('a').attr('href').includes("investment-philosophy") || $(this).children('a').attr('href').includes("team")) {
-        body.removeClass('-hideOverflow');
-      }
-    }
+    //   if($(this).children('a').attr('href').includes("investment-philosophy") || $(this).children('a').attr('href').includes("team")) {
+    //     body.removeClass('-hideOverflow');
+    //   }
+    // }
   })
   
   $(window).on('scroll', function() {
@@ -61,7 +60,6 @@ var Header = function() {
       return $(this).data('content') == index
     })
 
-    // var projectHeight = projectToShow
     projectsContainer.addClass('-visible')
     projectToShow.addClass('-visible');
     body.addClass('-hideOverflow');
@@ -91,92 +89,88 @@ var Header = function() {
     profilesPages.removeClass('-visible');
     projectsContainer.removeClass('-visible')
 
-    console.log(window.scrollY)
-    console.log($('#investment-philosophy')[0].offsetTop)
-
     if(window.innerWidth < 720 || window.scrollY > $('#investment-philosophy')[0].offsetTop) {
       body.removeClass('-hideOverflow');
     }
   })
 
-  function scrollDirection(e) {
-    console.log(e)
-    if (e.originalEvent.wheelDelta > 0){
-      return 'up'
-    } else {
-      return 'down'
-    }
-  }
+  // function scrollDirection(e) {
+  //   if (e.originalEvent.wheelDelta > 0){
+  //     return 'up'
+  //   } else {
+  //     return 'down'
+  //   }
+  // }
 
-  $(document).on('mousewheel', _.debounce(function(e) {
-    if(window.innerWidth > 720) {
-      var portfolio = e.originalEvent.path.filter(function(target) {
-        return $(target)[0].className == 'home__portfolio'
-      })
+  // $(document).on('mousewheel', _.debounce(function(e) {
+  //   if(window.innerWidth > 720) {
+  //     var portfolio = e.originalEvent.path.filter(function(target) {
+  //       return $(target)[0].className == 'home__portfolio'
+  //     })
   
-      var purpose = e.originalEvent.path.filter(function(target) {
-        return $(target)[0].className == 'home__purpose'
-      })
+  //     var purpose = e.originalEvent.path.filter(function(target) {
+  //       return $(target)[0].className == 'home__purpose'
+  //     })
   
-      var investment = e.originalEvent.path.filter(function(target) {
-        return $(target)[0].className == 'home__investment-philosophy'
-      })
+  //     var investment = e.originalEvent.path.filter(function(target) {
+  //       return $(target)[0].className == 'home__investment-philosophy'
+  //     })
   
-      var slide = e.originalEvent.path.filter(function(target) {
-        return target.className == 'home__portfolio__slide'
-      })
+  //     var slide = e.originalEvent.path.filter(function(target) {
+  //       return target.className == 'home__portfolio__slide'
+  //     })
   
-      var slideIndex = $(slide[0]).children('.project').data('ref');
+  //     var slideIndex = $(slide[0]).children('.project').data('ref');
   
-      if(purpose.length > 0 && scrollDirection(e) == 'down') {
-        $('html, body').animate({
-          scrollTop: $('.home__portfolio').offset().top + -70
-        }, 1000, function() {
-          var $target = $('.home__portfolio');
-          $target.focus();
-        })
-      }
+  //     if(purpose.length > 0 && scrollDirection(e) == 'down') {
+  //       $('html, body').animate({
+  //         scrollTop: $('.home__portfolio').offset().top + -70
+  //       }, 1000, function() {
+  //         var $target = $('.home__portfolio');
+  //         $target.focus();
+  //       })
+  //     }
   
-      if(portfolio.length > 0 && scrollDirection(e) == 'down') {
-        if(slideIndex == 10) {
-          body.removeClass('-hideOverflow');
-          $('html, body').animate({
-            scrollTop: $('.home__investment-philosophy').offset().top + -70
-          }, 1000, function() {
-            var $target = $('.home__investment-philosophy');
-            $target.focus();
-          });
-        } else {
-          slider.slick('slickNext');
-        }
-      }
+  //     if(portfolio.length > 0 && scrollDirection(e) == 'down') {
+  //       if(slideIndex == 10) {
+  //         body.removeClass('-hideOverflow');
+  //         $('html, body').animate({
+  //           scrollTop: $('.home__investment-philosophy').offset().top + -70
+  //         }, 1000, function() {
+  //           var $target = $('.home__investment-philosophy');
+  //           $target.focus();
+  //         });
+  //       } else {
+  //         slider.slick('slickNext');
+  //       }
+  //     }
   
-      if(portfolio.length > 0 && scrollDirection(e) == 'up') {
-        if(slideIndex == 0) {
-          $('html, body').animate({
-            scrollTop: $('.home__purpose').offset().top + -130
-          }, 1000, function() {
-            var $target = $('.home__purpose');
-            $target.focus();
-          });
-        } else {
-          slider.slick('slickPrev');
-        }
-      }
+  //     if(portfolio.length > 0 && scrollDirection(e) == 'up') {
+  //       if(slideIndex == 0) {
+  //         $('html, body').animate({
+  //           scrollTop: $('.home__purpose').offset().top + -130
+  //         }, 1000, function() {
+  //           var $target = $('.home__purpose');
+  //           $target.focus();
+  //         });
+  //       } else {
+  //         slider.slick('slickPrev');
+  //       }
+  //     }
   
-      if(investment.length > 0 && scrollDirection(e) == 'up') {
-        if(window.scrollY <= $(investment)[0].offsetTop) {
-          body.addClass('-hideOverflow');
-          $('html, body').animate({
-            scrollTop: $('.home__portfolio').offset().top + -70
-          }, 1000, function() {
-            var $target = $('.home__portfolio');
-            $target.focus();
-          });
-        }
-      }
-    }
-  }, 50))
+  //     if(investment.length > 0 && scrollDirection(e) == 'up') {
+  //       if(window.scrollY <= $(investment)[0].offsetTop) {
+  //         // body.addClass('-hideOverflow');
+  //         $('html, body').animate({
+  //           scrollTop: $('.home__portfolio').offset().top + -70
+  //         }, 1000, function() {
+  //           var $target = $('.home__portfolio');
+  //           $target.focus();
+  //         });
+  //       }
+  //     }
+  //   }
+  // }, 50))
 
   var sections = $('.-js-link');
   var scrollValue;

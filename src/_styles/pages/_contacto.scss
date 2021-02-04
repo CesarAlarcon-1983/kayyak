@@ -76,6 +76,7 @@
       border-bottom: 1px solid $corpBlack;
       height: 50px;
       display: flex;
+      align-items: center;
 
       @include mq(md) {
         width: 70%;
@@ -89,7 +90,7 @@
         outline: none;
       }
 
-      button {
+      a {
         background: transparent;
         border: none;
         color: $blue;
@@ -97,6 +98,8 @@
         font-weight: 500;
         text-transform: uppercase;
         outline: none;
+        display: block;
+        text-decoration: none;
       }
     }
   }
