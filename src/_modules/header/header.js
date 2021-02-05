@@ -14,8 +14,9 @@ var Header = function() {
   var closeProjectButton = $('.project-page__hero__close-button')
   var closeProfileButton = $('.profile-page__hero__close-button')
   var menuItems = $('.header__item');
-  var slider = $('.home__portfolio__slider');
-  // body.addClass('-hideOverflow');
+  // var slider = $('.home__portfolio__slider');
+
+  // fullpage_api.responsiveSlides.toSections();
 
   if(window.innerWidth < 720 || window.location.pathname === '/contacto/' || window.location.hash === '#investment-philosophy' || window.location.hash === '#team') {
     body.removeClass('-hideOverflow');
@@ -46,13 +47,13 @@ var Header = function() {
     // }
   })
   
-  $(window).on('scroll', function() {
-      if(window.scrollY > 150) {
-        header.addClass('-scrolled');
-      } else {
-        header.removeClass('-scrolled');
-      }
-  })
+  // $(window).on('scroll', function() {
+  //     if(window.scrollY > 150) {
+  //       header.addClass('-scrolled');
+  //     } else {
+  //       header.removeClass('-scrolled');
+  //     }
+  // })
 
   openProjectButton.on('click', function() {
     var index = $(this).data('target');

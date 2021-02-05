@@ -16,6 +16,7 @@ head
     block meta
     block stylesheets
         link(rel='stylesheet', href= baseUrl + 'styles/main.css')
+        link(rel="stylesheet" href= baseUrl + "styles/fullpage.css")
 
 body
     <!--[if lt IE 11]>
@@ -35,9 +36,14 @@ body
     block scripts
         script(src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous")
         script(src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js")
+        script(type="text/javascript" src= baseUrl + "scripts/fullPageCustom.js")
+        script(type="text/javascript" src= baseUrl + "scripts/fullpage.extensions.min.js")
+        script(type="text/javascript" src= baseUrl + "scripts/scrolloverflow.min.js")
+        script(type="text/javascript" src= baseUrl + "scripts/scrolloverflow.min.js.map")
         script(src= baseUrl + 'scripts/main.js')
         
         script(src="//cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js")
         script new WOW().init();
+        script var myFullpage = new fullpage('#fullpage',{scrollOverflow: true,dragAndMove: true});
 
 </html>

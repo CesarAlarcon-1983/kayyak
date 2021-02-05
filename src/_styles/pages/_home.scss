@@ -1,9 +1,9 @@
 .home {
-  padding-top: 70px;
+  // padding-top: 70px;
 
-  @include mq(md) {
-    padding-top: 130px;
-  }
+  // @include mq(md) {
+  //   padding-top: 130px;
+  // }
 
   &__purpose {
     background: url('/images/home/purpose.jpg') no-repeat center center / cover;
@@ -13,7 +13,7 @@
     flex-direction: column;
     padding: 50px 0;
     position: relative;
-    height: calc(100vh - 70px);
+    height: 100%;
 
     &:after {
       content: '';
@@ -28,7 +28,7 @@
 
     @include mq(md) {
       padding: 150px 0;
-      height: calc(100vh - 130px);
+      // height: calc(100vh - 130px);
     }
 
     &__content {
@@ -107,44 +107,19 @@
     
     &__slide {
       position: relative;
-    }
-
-    &__overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      width: 100%;
       height: 100%;
-      z-index: 1000;
-    }
-   
-    .slick-slider {
-      margin-top: -3px;
-    }
-    .slick-slide {
-      margin-bottom: -6px;
     }
 
-    .slick-next,
-    .slick-prev {
-      height: auto;
-      width: 50px;
-      left: 40px;
-      &:before {
-        content: '';
-      }
-    }
-    .slick-prev {
-      background: url('/images/arrow-up.svg') no-repeat center center / cover;
-      top: 10%;
-    }
-
-    .slick-next {
-      background: url('/images/arrow-down.svg') no-repeat center center / cover;
-      top: 90%;
-    }
+    // &__overlay {
+    //   position: absolute;
+    //   top: 0;
+    //   left: 0;
+    //   right: 0;
+    //   bottom: 0;
+    //   width: 100%;
+    //   height: 100%;
+    //   z-index: 1000;
+    // }
   }
 
   &__investment-philosophy {
