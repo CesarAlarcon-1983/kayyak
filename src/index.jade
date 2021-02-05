@@ -14,14 +14,11 @@ block content
             img(src="/images/emblem.png")
           h2.home__purpose__title We seek to invest in exceptional entrepreneurs whose purpose is to solve today’s greatest challenges.
           span.home__purpose__text View Portfolio
-          a.home__purpose__scroll-button.-js-link(href="#portfolio")
+          a.home__purpose__scroll-button.-js-link(href="#portfolio-1")
     each project, index in site.data.projects
-      .section
+      section(class='section' id='portfolio-' + (index + 1))
         .home__portfolio__slide
-          +project(project, (index + 1), site.data.projects.length)
-        //- section.home__portfolio#portfolio
-          //- +slider("home__portfolio__slider")
-    
+          +project(project, (index + 1), site.data.projects.length)    
     section.fp-auto-height.section#investment-philosophy
       .home__investment-philosophy
         .container
@@ -66,7 +63,14 @@ block content
           .home__team__wrapper 
             span.home__team__name Andrés Pesce
             span.home__team__profile-button(data-target=4) View profile
-  
+      //- footer.footer
+      //-   .footer__container
+      //-     a.footer__logo(href="/")
+      //-       img(src="/images/logo-black.png")
+      //-     a.footer__social(href="https://www.linkedin.com/company/kayyak-ventures/" target="_blank")
+      //-       i.fa.fa-linkedin
+
+      
   .projects-container
     each project, index in site.data.projects
       +project-page(project, (index + 1))

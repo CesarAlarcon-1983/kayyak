@@ -23,6 +23,10 @@ body {
     font-size: $sm;
 }
 
+// main {
+//   margin-top: 70px !important;
+// }
+
 a {
     color:$link;
     transition: all $duration $easingLight;
@@ -38,6 +42,11 @@ ul {
     padding: 0;
     margin: 0;
 }
+
+// .fp-section,
+// .fp-tableCell {
+//   height: calc(100vh - 70px) !important;
+// }
 
 // Styling on warning for users on IE7 or below
 .browsehappy {

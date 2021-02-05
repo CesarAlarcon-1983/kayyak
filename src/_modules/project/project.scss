@@ -146,13 +146,14 @@
 
   &__image {
     width: 100%;
-    height: calc(100% - 70px);
+    height: 100vw;
     // height: 0;
     // padding-bottom: 106%;
     overflow: hidden;
     position: relative;
 
     @include mq(md) {
+      height: 100%;
       // padding-bottom: 53.2%;
       overflow: visible;
       position: absolute;
@@ -164,6 +165,7 @@
       position: absolute;
       width: auto;
       right: 0;
+      bottom: 0;
       height: 100%;
     }
   }

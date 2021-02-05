@@ -20,6 +20,7 @@ var Header = function() {
 
   if(window.innerWidth < 720 || window.location.pathname === '/contacto/' || window.location.hash === '#investment-philosophy' || window.location.hash === '#team') {
     body.removeClass('-hideOverflow');
+    console.log($(this).offset)
   }
 
   menuOpen.on('click', function(){
@@ -173,51 +174,51 @@ var Header = function() {
   //   }
   // }, 50))
 
-  var sections = $('.-js-link');
-  var scrollValue;
+  // var sections = $('.-js-link');
+  // var scrollValue;
   
-  sections.on('click', function() {
-    if($(this).attr('href').includes('purpose')) {
-      scrollValue = 130;
-    } else {
-      scrollValue = 70;
-    }
-  })
+  // sections.on('click', function() {
+  //   if($(this).attr('href').includes('purpose')) {
+  //     scrollValue = 130;
+  //   } else {
+  //     scrollValue = 70;
+  //   }
+  // })
 
 
-  $('a[href*="#"]')
-  // Remove links that don't actually link to anything
-  .not('[href="#buscar"]')
-  .not('[href="#"]')
-  .not('[href="#0"]')
-  .not('[href="#registro"]')
-  .not('[href="#login"]')
-  .click(function(event) {
-      // On-page links
-      if (
-          location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
-          &&
-          location.hostname == this.hostname
-      ) {
-        // Figure out element to scroll to
-          var target = $(this.hash);
-          target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-          // Does a scroll target exist?
-          if (target.length) {
-              // Only prevent default if animation is actually gonna happen
-              event.preventDefault();
+  // $('a[href*="#"]')
+  // // Remove links that don't actually link to anything
+  // .not('[href="#buscar"]')
+  // .not('[href="#"]')
+  // .not('[href="#0"]')
+  // .not('[href="#registro"]')
+  // .not('[href="#login"]')
+  // .click(function(event) {
+  //     // On-page links
+  //     if (
+  //         location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+  //         &&
+  //         location.hostname == this.hostname
+  //     ) {
+  //       // Figure out element to scroll to
+  //         var target = $(this.hash);
+  //         target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+  //         // Does a scroll target exist?
+  //         if (target.length) {
+  //             // Only prevent default if animation is actually gonna happen
+  //             event.preventDefault();
 
-              $('html, body').animate({
-                  scrollTop: target.offset().top + -scrollValue
-              }, 1000, function() {
-              // Callback after animation
-              // Must change focus!
-                  var $target = $(target);
-                  $target.focus();
-              });
-          }
-      }
-  });
+  //             $('html, body').animate({
+  //                 scrollTop: target.offset().top + -scrollValue
+  //             }, 1000, function() {
+  //             // Callback after animation
+  //             // Must change focus!
+  //                 var $target = $(target);
+  //                 $target.focus();
+  //             });
+  //         }
+  //     }
+  // });
 };
 
 module.exports = Header;
