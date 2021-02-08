@@ -1,5 +1,6 @@
 'use strict';
 var _ = require('lodash');
+var fullpage = require('../../_scripts/fullPageCustom');
 // Constructor
 var Header = function() {
   var header = $('.header');
@@ -14,9 +15,6 @@ var Header = function() {
   var closeProjectButton = $('.project-page__hero__close-button')
   var closeProfileButton = $('.profile-page__hero__close-button')
   var menuItems = $('.header__item');
-  // var slider = $('.home__portfolio__slider');
-
-  // fullpage_api.responsiveSlides.toSections();
 
   if(window.innerWidth < 720 || window.location.pathname === '/contacto/' || window.location.hash === '#investment-philosophy' || window.location.hash === '#team') {
     body.removeClass('-hideOverflow');
@@ -90,7 +88,7 @@ var Header = function() {
     profilesPages.removeClass('-visible');
     projectsContainer.removeClass('-visible')
 
-    if(window.innerWidth < 720 || window.scrollY > $('#investment-philosophy')[0].offsetTop) {
+    if(window.innerWidth < 720) {
       body.removeClass('-hideOverflow');
     }
   })
@@ -192,30 +190,29 @@ var Header = function() {
   .not('[href="#0"]')
   .not('[href="#registro"]')
   .not('[href="#login"]')
-  .click(function(event) {
-      // On-page links
-      if (
-          location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
-          &&
-          location.hostname == this.hostname
+  .on('click', function(event) {
+    // On-page links
+    if (
+        location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+        &&
+        location.hostname == this.hostname
       ) {
-        // Figure out element to scroll to
-          var target = $(this.hash);
-          target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-          // Does a scroll target exist?
-          if (target.length) {
-              // Only prevent default if animation is actually gonna happen
-              event.preventDefault();
-
-              $('html, body').animate({
-                  scrollTop: target.offset().top + -scrollValue
-              }, 1000, function() {
-              // Callback after animation
-              // Must change focus!
-                  var $target = $(target);
-                  $target.focus();
-              });
-          }
+      // Figure out element to scroll to
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+        // Does a scroll target exist?
+        if (target.length) {
+          // Only prevent default if animation is actually gonna happen
+          event.preventDefault();
+          $('html, body').animate({
+              scrollTop: target.offset().top + - scrollValue
+          }, 1000, function() {
+          // Callback after animation
+          // Must change focus!
+              var $target = $(target);
+              $target.focus();
+          });
+        }
       }
   });
 };

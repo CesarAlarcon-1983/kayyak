@@ -81,9 +81,13 @@
       border-radius: 50%;
       border: 2px solid $black;
       position: relative;
-      display: block;
+      display: none;
       margin-left: auto;
       margin-right: auto;
+
+      @include mq(md) {
+        display: block;
+      }
 
       &:after {
         content: '';
@@ -106,6 +110,14 @@
         top: 40%;
         left: 50%;
         transform: translate3d(-50%, -50%, 0) rotate(45deg);
+      }
+    
+      &--mobile {
+        display: block;
+  
+        @include mq(md) {
+          display: none;
+        }
       }
     }
   }
@@ -182,10 +194,10 @@
 
     &__wrapper-out{
       @include mq(md) {
-        background: $lightGray;
+        background: $white;
         display: flex;
-        align-items: center;
-        padding: 70px 0 0;
+        align-items: flex-end;
+        // padding: 70px 0 0;
         height: 100vh;
       }
     }

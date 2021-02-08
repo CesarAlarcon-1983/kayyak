@@ -5,7 +5,7 @@ mixin project-page(data, index)
         .project-page__hero__title=data.titulo
       .project-page__hero__container
         img(src=data.images.main)
-        button.project-page__hero__close-button
+        a.project-page__hero__close-button(href="/#portfolio#{index !== 0 ? ('-' + index) : ''}")
           span
           span
     .project-page__content

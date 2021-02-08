@@ -70,10 +70,19 @@
     }
 
     &__list {
+        display: none;
+
         @include mq(md) {
             display: flex;
             align-items: center;
             justify-content: flex-end;
+        }
+
+        &--mobile {
+            display: block;
+            @include mq(md) {
+                display: none;
+            }
         }
     }
 
