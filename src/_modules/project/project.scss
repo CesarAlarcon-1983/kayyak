@@ -39,7 +39,7 @@
 
     @include mq(md)  {
       position: absolute;
-      top: 50%;
+      top: calc(50% + 30px);
       left: 50%;
       transform: translate3d(-50%, -50%, 0);
       width: 70%;
@@ -84,7 +84,7 @@
     z-index: 2;
 
     @include mq(md) {
-      font-size: 60px;
+      font-size: 50px;
       margin-bottom: 40px;
     }
   }
@@ -97,7 +97,7 @@
     font-style: italic;
 
     @include mq(md) {
-      font-size: 30px;
+      font-size: 24px;
     }
   }
 
@@ -124,7 +124,7 @@
     font-family: $altFont;
 
     @include mq(md) {
-      font-size: 18px;
+      font-size: 16px;
       margin-bottom: 40px;
     }
   }
@@ -157,7 +157,7 @@
       overflow: visible;
       position: absolute;
       right: 0;
-      top: 0;
+      top: 70px;
     }
 
     img {
@@ -169,66 +169,88 @@
   }
 
   &.light-blue {
+    background: $lightBlue;
+
     #{$p}__content {
       background: $lightBlue;
     }
   }
 
   &.blue {
+    background: $blue;
+
     #{$p}__content {
       background: $blue;
     }
   }
 
   &.purple {
+    background: $purple;
+
     #{$p}__content {
       background: $purple;
     }
   }
 
   &.dark-blue {
+    background: $darkBlue;
+
     #{$p}__content {
       background: $darkBlue;
     }
   }
 
   &.mid-blue {
+    background: $midBlue;
+
     #{$p}__content {
       background: $midBlue;
     }
   }
 
   &.brown {
+    background: $brown;
+
     #{$p}__content {
       background: $brown;
     }
   }
 
   &.light-purple {
+    background: $lightPurple;
+
     #{$p}__content {
       background: $lightPurple;
     }
   }
 
   &.turquoise {
+    background: $turquoise;
+
     #{$p}__content {
       background: $turquoise;
     }
   }
 
   &.green {
+    background: $green;
+
     #{$p}__content {
       background: $green;
     }
   }
 
   &.dark-brown {
+    background: $darkBrown;
+
     #{$p}__content {
       background: $darkBrown;
     }
   }
 
   &.lightest-purple {
+    background: $lightestPurple;
+
     #{$p}__content {
       background: $lightestPurple;
     }

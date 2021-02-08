@@ -7,7 +7,7 @@ extends _layouts/base
 
 block content
   main.home#fullpage
-    section#purpose.section
+    section.section#purpose(data-anchor="purpose")
       .home__purpose
         .home__purpose__content
           .home__purpose__emblem
@@ -16,13 +16,13 @@ block content
           span.home__purpose__text View Portfolio
           a.home__purpose__scroll-button.-js-link(href="#portfolio")
     each project, index in site.data.projects
-      .section
+      .section(id="portfolio#{index !== 0 ? ('-' + index) : ''}" data-anchor="portfolio#{index !== 0 ? ('-' + index) : ''}")
         .home__portfolio__slide
           +project(project, (index + 1), site.data.projects.length)
         //- section.home__portfolio#portfolio
           //- +slider("home__portfolio__slider")
     
-    section.fp-auto-height.section#investment-philosophy
+    section.fp-auto-height.section#investment-philosophy(data-anchor="investment-philosophy")
       .home__investment-philosophy
         .container
           .row
@@ -37,35 +37,38 @@ block content
               p.home__investment-philosophy__text We are impact investors.We seek to invest in companies and exceptional entrepreneurs that have the purpose to solve our biggest social and environmental challenges by developing businesses that are competitive, scalable and sustainable.
               p.home__investment-philosophy__text We are active partners in building value and look to leverage our resources and our relationships to build market leaders. You might think VC is all about money. For us, it’s all about people.
     
-    section#team.section
-      .home__team
-        .home__team__container
-          .home__team__image
-            img(src="/images/home/crew-1.jpg")
-          .home__team__wrapper 
-            span.home__team__name Cristóbal Silva
-            span.home__team__profile-button(data-target=1) View profile
+    section#team.section.fp-auto-height(data-anchor="team")
+      .home__team__wrapper-out
+        .home__team
+          .home__team__container
+            .home__team__image
+              img(src="/images/home/crew-1.jpg")
+            .home__team__wrapper 
+              span.home__team__name Cristóbal Silva
+              span.home__team__profile-button(data-target=1) View profile
 
-        .home__team__container
-          .home__team__image  
-            img(src="/images/home/crew-2.jpg")
-          .home__team__wrapper 
-            span.home__team__name Antonia Brahm
-            span.home__team__profile-button(data-target=2) View profile
+          .home__team__container
+            .home__team__image  
+              img(src="/images/home/crew-2.jpg")
+            .home__team__wrapper 
+              span.home__team__name Antonia Brahm
+              span.home__team__profile-button(data-target=2) View profile
 
-        .home__team__container
-          .home__team__image  
-            img(src="/images/home/crew-3.jpg")
-          .home__team__wrapper 
-            span.home__team__name Evelyn Von Bischhoffshausen
-            span.home__team__profile-button(data-target=3) View profile
+          .home__team__container
+            .home__team__image  
+              img(src="/images/home/crew-3.jpg")
+            .home__team__wrapper 
+              span.home__team__name Evelyn Von Bischhoffshausen
+              span.home__team__profile-button(data-target=3) View profile
 
-        .home__team__container
-          .home__team__image  
-            img(src="/images/home/crew-4.jpg")
-          .home__team__wrapper 
-            span.home__team__name Andrés Pesce
-            span.home__team__profile-button(data-target=4) View profile
+          .home__team__container
+            .home__team__image  
+              img(src="/images/home/crew-4.jpg")
+            .home__team__wrapper 
+              span.home__team__name Andrés Pesce
+              span.home__team__profile-button(data-target=4) View profile
+
+    include ./_modules/footer/footer.jade
   
   .projects-container
     each project, index in site.data.projects

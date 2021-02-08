@@ -26,12 +26,9 @@ body
     include ../_modules/logo/logo.jade
     
     block header
-        include ../_modules/header/header.jade
+        include ../_modules/header/header.jade        
 
     block content
-
-    block footer
-        include ../_modules/footer/footer.jade
 
     block scripts
         script(src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous")
@@ -43,6 +40,5 @@ body
         
         script(src="//cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js")
         script new WOW().init();
-        script var myFullpage = new fullpage('#fullpage',{scrollOverflow: true,dragAndMove: true});
 
 </html>

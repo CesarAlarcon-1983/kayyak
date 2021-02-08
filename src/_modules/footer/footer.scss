@@ -1,4 +1,6 @@
 .footer {
+  background: #fff;
+  
   &__container {
     display: flex;
     padding: 20px 15px;
@@ -7,8 +9,8 @@
     border-top: 1px solid $lightestGray;
 
     @include mq(md) {
-      padding: 40px 5vw;
-      height: 100px;
+      padding: 25px 5vw;
+      height: 80px;
     }
   }
 
