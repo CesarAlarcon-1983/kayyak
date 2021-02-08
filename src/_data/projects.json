@@ -14,10 +14,10 @@
     "cita_fundador": "Our dream is that any family in any place of the world can access state of the genomic sequencing technology for a better living",
     "mision": "Miroculus is advancing science and improving lives faster, together. Making the most complex protocols easy and accessible to scientists everywhere.",
     "images": {
-      "main": "/images/home/miroculus.jpg",
-      "heading": "/images",
-      "bottom_left": "/images/home/miroculus-bottom.jpg",
-      "bottom_right": "/images/home/miroculus-bottom-2.jpg"
+      "main": "./images/home/miroculus.jpg",
+      "heading": "./images",
+      "bottom_left": "./images/home/miroculus-bottom.jpg",
+      "bottom_right": "./images/home/miroculus-bottom-2.jpg"
     },
     "color": "light-blue",
     "pais": "San Francisco, USA",
@@ -33,10 +33,10 @@
     "cita_fundador": "We seek to bring Webdox to 5 continents and to be the world leader in contract lifecycle management.",
     "mision": "Webdox automates contract management in companies.",
     "images": {
-      "main":"/images/home/webdox.jpg",
-      "heading": "/images",
-      "bottom_left": "/images/webdox/webdox-2.jpg",
-      "bottom_right": "/images/webdox/webdox-1.jpg"
+      "main":"./images/home/webdox.jpg",
+      "heading": "./images",
+      "bottom_left": "./images/webdox/webdox-2.jpg",
+      "bottom_right": "./images/webdox/webdox-1.jpg"
     },
     "color": "blue",
     "pais": "Santiago, Chile",
@@ -53,10 +53,10 @@
     "cita_fundador": "We dream of a market where there are no entry barriers for financing SMEs in Latin America.",
     "mision": "Xepelin seeks to democratize access to capital and financial inclusion for our clients by creating a simple, fast and secure experience through technology.",
     "images": {
-      "main":"/images/home/xepelin.jpg",
-      "heading": "/images",
-      "bottom_left": "/images/xepelin/xepelin-2.jpg",
-      "bottom_right": "/images/xepelin/xepelin-1.jpg"
+      "main":"./images/home/xepelin.jpg",
+      "heading": "./images",
+      "bottom_left": "./images/xepelin/xepelin-2.jpg",
+      "bottom_right": "./images/xepelin/xepelin-1.jpg"
     },
     "color": "purple",
     "pais": "Santiago, Chile",
@@ -71,10 +71,10 @@
     "cita_fundador": "We seek to be the largest group of virtual restaurants in Latin America, the best FoodTech startup, and the pioneers in creating the best home experience for customers.",
     "mision": "Foodology strives to make homes the best restaurant, at the best price.",
     "images": {
-      "main":"/images/home/foodology.jpg",
-      "heading": "/images",
-      "bottom_left": "/images/foodology/foodology-2.jpg",
-      "bottom_right": "/images/foodology/foodology-1.jpg"
+      "main":"./images/home/foodology.jpg",
+      "heading": "./images",
+      "bottom_left": "./images/foodology/foodology-2.jpg",
+      "bottom_right": "./images/foodology/foodology-1.jpg"
     },
     "color": "dark-blue",
     "pais": "Bogotá, Colombia",
@@ -92,10 +92,10 @@
     "cita_fundador": "Our dream is that every person in Latam achieves its financial wellness, having access to high-quality products at a fair price, focusing on people first.",
     "mision": "Helping people to achieve their financial goals through education, tools and access to financial products.",
     "images": {
-      "main":"/images/home/destacame.jpg",
-      "heading": "/images",
-      "bottom_left": "/images/destacame/destacame-2.jpg",
-      "bottom_right": "/images/destacame/destacame-1.jpg"
+      "main":"./images/home/destacame.jpg",
+      "heading": "./images",
+      "bottom_left": "./images/destacame/destacame-2.jpg",
+      "bottom_right": "./images/destacame/destacame-1.jpg"
     },
     "color": "mid-blue",
     "pais": "Santiago, Chile",
@@ -111,10 +111,10 @@
     "cita_fundador": "We dream of true circular economy, in which we are able to produce healthy, tasty and cost effective food while regenerating our planet.",
     "mision": "Inspired by nature to produce the food to take care of our kids and our planet.",
     "images": {
-      "main":"/images/home/f4f.jpg",
-      "heading": "/images",
-      "bottom_left": "/images/f4f/f4f-2.jpg",
-      "bottom_right": "/images/f4f/f4f-1.jpg"
+      "main":"./images/home/f4f.jpg",
+      "heading": "./images",
+      "bottom_left": "./images/f4f/f4f-2.jpg",
+      "bottom_right": "./images/f4f/f4f-1.jpg"
     },
     "color": "brown",
     "pais": "Talca, Chile",
@@ -131,10 +131,10 @@
     "cita_fundador": "Hundreds of families come to Chile looking for an opportunity. Our main goal is to support them with a vote of confidence so they can get the chance to obtain everything that they always wanted.",
     "mision": "Migrante is the first and only financial institution working with immigrants in Chile.",
     "images": {
-      "main":"/images/home/migrante.jpg",
-      "heading": "/images",
-      "bottom_left": "/images/migrante/migrante-2.jpg",
-      "bottom_right": "/images/migrante/migrante-1.jpg"
+      "main":"./images/home/migrante.jpg",
+      "heading": "./images",
+      "bottom_left": "./images/migrante/migrante-2.jpg",
+      "bottom_right": "./images/migrante/migrante-1.jpg"
     },
     "color": "light-purple",
     "pais": "Santiago, Chile",
@@ -151,10 +151,10 @@
     "cita_fundador": "Unleash the power of collaboration among people and companies.",
     "mision": "Disrupting the way of doing businesses, by bringing their clients flexibility in a close and collaborative environment.",
     "images": {
-      "main":"/images/home/cowork-latam.jpg",
-      "heading": "/images",
-      "bottom_left": "/images/cowork/cowork-2.jpg",
-      "bottom_right": "/images/cowork/cowork-1.jpg"
+      "main":"./images/home/cowork-latam.jpg",
+      "heading": "./images",
+      "bottom_left": "./images/cowork/cowork-2.jpg",
+      "bottom_right": "./images/cowork/cowork-1.jpg"
     },
     "color": "turquoise",
     "pais": "Santiago, Chile",
@@ -171,10 +171,10 @@
     "cita_fundador": "If we don't start producing more with less, the agri-food challenges we will face in the next decades are going to become a critical problem. We need to start generating changes now.",
     "mision": "AgroUrbana is the first vertical farming company in Latin America.",
     "images": {
-      "main":"/images/home/agrourbana.jpg",
-      "heading": "/images",
-      "bottom_left": "/images/agro-urbana/agrourbana-2.jpg",
-      "bottom_right": "/images/agro-urbana/agrourbana-1.jpg"
+      "main":"./images/home/agrourbana.jpg",
+      "heading": "./images",
+      "bottom_left": "./images/agro-urbana/agrourbana-2.jpg",
+      "bottom_right": "./images/agro-urbana/agrourbana-1.jpg"
     },
     "color": "green",
     "pais": "Santiago, Chile",
@@ -193,10 +193,10 @@
     "cita_fundador": "Our dream is to eliminate blind spots in operations boosting productivity, reducing costs, enhancing benefits and improving safety.",
     "mision": "Revolutionizing how people and machines locate, navigate and collaborate in the connected world.",
     "images": {
-      "main":"/images/home/humatics.jpg",
-      "heading": "/images",
-      "bottom_left": "/images/humatics/humatics-2.jpg",
-      "bottom_right": "/images/humatics/humatics-1.jpg"
+      "main":"./images/home/humatics.jpg",
+      "heading": "./images",
+      "bottom_left": "./images/humatics/humatics-2.jpg",
+      "bottom_right": "./images/humatics/humatics-1.jpg"
     },
     "color": "dark-brown",
     "pais": "Waltham, Massachusetts, USA",
@@ -213,10 +213,10 @@
     "cita_fundador": "Our dream is to help patients get the right care when there's still time to act.",
     "mision": "Unmasking immune state for better health outcome.",
     "images": {
-      "main":"/images/home/cytovale.jpg",
-      "heading": "/images",
-      "bottom_left": "/images/cytovale/cytovale-2.jpg",
-      "bottom_right": "/images/cytovale/cytovale-1.jpg"
+      "main":"./images/home/cytovale.jpg",
+      "heading": "./images",
+      "bottom_left": "./images/cytovale/cytovale-2.jpg",
+      "bottom_right": "./images/cytovale/cytovale-1.jpg"
     },
     "color": "lightest-purple",
     "pais": "San Francisco, USA",
