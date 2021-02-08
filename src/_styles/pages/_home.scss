@@ -1,4 +1,10 @@
 .home {
+  // padding-top: 70px;
+
+  // @include mq(md) {
+  //   padding-top: 130px;
+  // }
+
   &__purpose {
     background: url('/images/home/purpose.jpg') no-repeat center center / cover;
     display: flex;
@@ -98,7 +104,6 @@
 
   &__portfolio {
     overflow: hidden;
-    padding-top: 70px;
     
     &__slide {
       position: relative;
@@ -119,6 +124,7 @@
 
   &__investment-philosophy {
     padding: 50px 0;
+
     @include mq(md) {
       padding: 150px 0;
     }

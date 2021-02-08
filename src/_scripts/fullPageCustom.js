@@ -1666,7 +1666,6 @@
           of the viewport.
           */
           previousDestTop = position;
-          console.log(position)
           return position;
       }
 
