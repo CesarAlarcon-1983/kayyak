@@ -31,6 +31,12 @@ $(function() {
         console.log($('[data-anchors]')),
         $('.profile-page__hero__close-button').on('click', function() {
           fullpage_api.silentMoveTo('team', 0)
+        }),
+        $('.-js-link').on('click', function() {
+          $('.project-page').removeClass('-visible');
+          $('.profile-page').removeClass('-visible');
+          $('.projects-container').removeClass('-visible')
+          fullpage_api.silentMoveTo($(this).attr('href'), 0)
         })
       );
     }

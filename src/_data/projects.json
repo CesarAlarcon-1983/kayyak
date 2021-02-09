@@ -21,7 +21,7 @@
     },
     "color": "light-blue",
     "pais": "San Francisco, USA",
-    "website": "www.miroculus.com"
+    "website": "//www.miroculus.com"
   },
   {
     "titulo": "Webdox",
@@ -29,7 +29,7 @@
       "Webdox is a Software as a Service that automates and digitizes the contracts of medium and large companies in LatAm and the World. Webdox is a platform for teams, clients, and suppliers to work interconnected in the creation, negotiation, approval, signing, and management of contracts.",
       "The tool generates a high impact on time and costs, along with promoting better, more transparent, and lasting relationships among all stakeholders, through contracts that are created and administered according to the purpose and sense of business, in the manner most efficient and effective possible."
     ],
-    "fundadores": ["José manuel Jiménez"],
+    "fundadores": ["José Manuel Jiménez"],
     "cita_fundador": "We seek to bring Webdox to 5 continents and to be the world leader in contract lifecycle management.",
     "mision": "Webdox automates contract management in companies.",
     "images": {
@@ -40,7 +40,7 @@
     },
     "color": "blue",
     "pais": "Santiago, Chile",
-    "website": "https://www.webdoxclm.com/"
+    "website": "//www.webdoxclm.com/"
   },
   {
     "titulo": "Xepelin",
@@ -49,7 +49,7 @@
       "Xepelin helps corporations to manage and support their suppliers with financial services and technological tools that allow all actors to have better control of their working capital. Due to its efficient distribution model, Xepelin can reach with its solutions not only the large suppliers but even the smallest ones that have not been covered by traditional financial institutions. The proprietary risk model evaluates an operation in seconds, allowing any client to secure financing the same day.",
       "Once the supplier is enrolled in the platform, Xepelin delivers capital, education, and free software to manage their finances. All in a simple, secure, and transparent way."
     ],
-    "fundadores": ["Nicolás De Camino"],
+    "fundadores": ["Nicolás De Camino", "Sebastián Kreis"],
     "cita_fundador": "We dream of a market where there are no entry barriers for financing SMEs in Latin America.",
     "mision": "Xepelin seeks to democratize access to capital and financial inclusion for our clients by creating a simple, fast and secure experience through technology.",
     "images": {
@@ -60,14 +60,14 @@
     },
     "color": "purple",
     "pais": "Santiago, Chile",
-    "website": "https://www.xepelin.com/sobre-nosotros.html"
+    "website": "//www.xepelin.com/"
   },
   {
     "titulo": "Foodology",
     "texto": [
       "Foodology is a Colombian startup dedicated 100% to the delivery business. Through the intensive use of data and technology, Foodology creates virtual restaurant brands and operates them from hidden kitchens, especially for homes. In addition, it seeks to reduce delivery times, increase the quality of the dishes, and offer different high-quality concepts at attractive prices to the public."
     ],
-    "fundadores": ["Daniela Izquierdo"],
+    "fundadores": ["Daniela Izquierdo", " Juan Guillermo Azuero"],
     "cita_fundador": "We seek to be the largest group of virtual restaurants in Latin America, the best FoodTech startup, and the pioneers in creating the best home experience for customers.",
     "mision": "Foodology strives to make homes the best restaurant, at the best price.",
     "images": {
@@ -78,7 +78,7 @@
     },
     "color": "dark-blue",
     "pais": "Bogotá, Colombia",
-    "website": "https://www.foodology.com.co/team"
+    "website": "//www.foodology.com.co/"
   },
   {
     "titulo": "Destácame",
@@ -88,7 +88,7 @@
       "All of this is done through the use of technology which helps people enhance their experience, integrating alternative information and technology resources to offer efficient and safe solutions.",
       "On the other side, it allows banks to increase their capacity to serve their customers, customizing and improving their clients' experience."
     ],
-    "fundadores": ["Jorge Camus"],
+    "fundadores": ["Jorge Camus", "Augusto Ruiz Tagle", "Sebastián Ugarte"],
     "cita_fundador": "Our dream is that every person in Latam achieves its financial wellness, having access to high-quality products at a fair price, focusing on people first.",
     "mision": "Helping people to achieve their financial goals through education, tools and access to financial products.",
     "images": {
@@ -99,26 +99,7 @@
     },
     "color": "mid-blue",
     "pais": "Santiago, Chile",
-    "website": "www.destacame.cl"
-  },
-  {
-    "titulo": "F4F",
-    "texto": [
-      "F4F transforms organic waste into high quality ingredients for animal feed by rearing insects. The company was created to find new ways of producing protein, so they can help feed a growing global demand. Insects as a source of feed have enormous nutritional and sustainable benefits, being the natural food of several animal species and 2 billion people worldwide.",
-      "They have developed an insect rearing technology capable of transforming organic waste into high value ingredients for animal feed and additionally organic fertilizer. Their business model is based on waste management services and selling feed ingredients and fertilizer. Their products have a positive environmental footprint, are carbon negative and can replace non sustainable sources like fishmeal and soy. Their process avoids methane emissions associated with food waste. For each kg of insect protein their process has a negative footprint of 40kg CO2eq."
-    ],
-    "fundadores": ["Cristián Emhart"],
-    "cita_fundador": "We dream of true circular economy, in which we are able to produce healthy, tasty and cost effective food while regenerating our planet.",
-    "mision": "Inspired by nature to produce the food to take care of our kids and our planet.",
-    "images": {
-      "main":"/images/home/f4f.jpg",
-      "heading": "/images",
-      "bottom_left": "/images/f4f/f4f-2.jpg",
-      "bottom_right": "/images/f4f/f4f-1.jpg"
-    },
-    "color": "brown",
-    "pais": "Talca, Chile",
-    "website": "www.f4f.cl"
+    "website": "//www.destacame.cl"
   },
   {
     "titulo": "Migrante",
@@ -127,7 +108,7 @@
       "They are certain that inmigration adds to the development of the country, and they want to actively participate to bring better opportunities of integration and development through access to credits and financial advice.",
       "As they say at Migrante - we are many, we are all, we are Migrante."
     ],
-    "fundadores": ["Diego Fleischmann"],
+    "fundadores": ["Diego Fleischmann", "Ignacio Canals", "Salvador Porta", "Sebastián Ayub", "Benjamin Izikson"],
     "cita_fundador": "Hundreds of families come to Chile looking for an opportunity. Our main goal is to support them with a vote of confidence so they can get the chance to obtain everything that they always wanted.",
     "mision": "Migrante is the first and only financial institution working with immigrants in Chile.",
     "images": {
@@ -138,7 +119,7 @@
     },
     "color": "light-purple",
     "pais": "Santiago, Chile",
-    "website": "www.migrante.com"
+    "website": "//www.migrante.com"
   },
   {
     "titulo": "Co-Work Latam",
@@ -147,7 +128,7 @@
       "They adapt themselves to the growth and stages of their clients, providing from shared spaces to private offices all of this is sustained by a proven business model of collaboration, cost optimization and versatility. Co-work brings the tools and infrastructure, so that people only have to focus on growing their business.",
       "Cowork is committed to provide their clients with the best working experience surrounded by an environment of inclusivity, shared experiences and community."
     ],
-    "fundadores": ["Sebastián O´Ryan"],
+    "fundadores": ["Sebastián O´Ryan", " Horacio Justiniano"],
     "cita_fundador": "Unleash the power of collaboration among people and companies.",
     "mision": "Disrupting the way of doing businesses, by bringing their clients flexibility in a close and collaborative environment.",
     "images": {
@@ -158,7 +139,7 @@
     },
     "color": "turquoise",
     "pais": "Santiago, Chile",
-    "website": "www.coworklatam.com"
+    "website": "//www.coworklatam.com"
   },
   {
     "titulo": "AgroUrbana",
@@ -167,7 +148,7 @@
       "AgroUrbana integrates and develops technology to do more with less and to bring farming to the table, in places unavailable until today. Growing plants in a resilient and consistent way, every day regardless of the season or the weather conditions. They produce vegetables of the highest quality generating the least possible impact by consuming 95% less water, using 99% less soil, without using any synthetic pesticides and by reducing our carbon footprint associated with transportation.",
       "AgroUrbana´s job, talent and technology are at the service of the community and the environment."
     ],
-    "fundadores": ["Cristián Sjogren"],
+    "fundadores": ["Cristián Sjogren", "Pablo Bunster"],
     "cita_fundador": "If we don't start producing more with less, the agri-food challenges we will face in the next decades are going to become a critical problem. We need to start generating changes now.",
     "mision": "AgroUrbana is the first vertical farming company in Latin America.",
     "images": {
@@ -178,7 +159,7 @@
     },
     "color": "green",
     "pais": "Santiago, Chile",
-    "website": "www.agrourbana.ag"
+    "website": "//www.agrourbana.ag"
   },
   {
     "titulo": "Humatics",
@@ -200,7 +181,7 @@
     },
     "color": "dark-brown",
     "pais": "Waltham, Massachusetts, USA",
-    "website": "www.humatics.com"
+    "website": "//www.humatics.com"
   },
   {
     "titulo": "Cytovale",
@@ -220,6 +201,6 @@
     },
     "color": "lightest-purple",
     "pais": "San Francisco, USA",
-    "website": "www.cytovale.com"
+    "website": "//www.cytovale.com"
   }
 ]
