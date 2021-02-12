@@ -7,22 +7,21 @@ extends _layouts/base
 
 block content
   main.home#fullpage
-    section.section#purpose(data-anchor="purpose")
+    section.section#nav-purpose(data-anchor="purpose")
       .home__purpose
+        img.-background(src="/images/home/purpose.jpg")
         .home__purpose__content
           .home__purpose__emblem
             img(src="/images/emblem.png")
           h2.home__purpose__title We seek to invest in exceptional entrepreneurs whose purpose is to solve today’s greatest challenges.
           span.home__purpose__text View Portfolio
-          a.home__purpose__scroll-button.-js-link(href="#portfolio")
+          a.home__purpose__scroll-button(href="#portfolio")
+          a.home__purpose__scroll-button.home__purpose__scroll-button--mobile.-js-link(href="#nav-portfolio")
     each project, index in site.data.projects
-      .section(id="portfolio#{index !== 0 ? ('-' + index) : ''}" data-anchor="portfolio#{index !== 0 ? ('-' + index) : ''}")
+      .section(id="nav-portfolio#{index !== 0 ? ('-' + index) : ''}" data-anchor="portfolio#{index !== 0 ? ('-' + index) : ''}")
         .home__portfolio__slide
-          +project(project, (index + 1), site.data.projects.length)
-        //- section.home__portfolio#portfolio
-          //- +slider("home__portfolio__slider")
-    
-    section.fp-auto-height.section#investment-philosophy(data-anchor="investment-philosophy")
+          +project(project, (index), site.data.projects.length)    
+    section.fp-auto-height.section#nav-investment-philosophy(data-anchor="investment-philosophy")
       .home__investment-philosophy
         .container
           .row
@@ -33,11 +32,11 @@ block content
               p.home__investment-philosophy__text We are highly selective in who we invest in, focusing on a handful of entrepreneurs per year in order to dedicate our full energy and heart to help them. We like to be artisans.
               p.home__investment-philosophy__text We typically invest in companies that are generating revenue with attractive margins and/or unit economics and capital-efficient business models.
               p.home__investment-philosophy__text We focus on Seed and Series A rounds. We are prepared to invest $1 million to $2 million of capital in each new investment and expect to continue investing in our portfolio companies in successive rounds. We are flexible on the mechanics. We can lead or participate.
-              p.home__investment-philosophy__text We primarily invest in companies based in Latin America, but will also back businesses based in North America and Europe to be connected, learn, and build bridges to our entrepreneurs.
-              p.home__investment-philosophy__text We are impact investors.We seek to invest in companies and exceptional entrepreneurs that have the purpose to solve our biggest social and environmental challenges by developing businesses that are competitive, scalable and sustainable.
+              p.home__investment-philosophy__text We primarily invest in companies based in Latin America, but will also back businesses based in North America and Europe in order to be connected, learn and build bridges to our entrepreneurs.
+              p.home__investment-philosophy__text We are impact investors. We seek to invest in companies and exceptional entrepreneurs that have the purpose to solve our biggest social and environmental challenges by developing businesses that are competitive, scalable and sustainable.
               p.home__investment-philosophy__text We are active partners in building value and look to leverage our resources and our relationships to build market leaders. You might think VC is all about money. For us, it’s all about people.
     
-    section#team.section.fp-auto-height(data-anchor="team")
+    section#nav-team.section.fp-auto-height(data-anchor="team")
       .home__team__wrapper-out
         .home__team
           .home__team__container
@@ -72,6 +71,6 @@ block content
   
   .projects-container
     each project, index in site.data.projects
-      +project-page(project, (index + 1))
+      +project-page(project, (index))
     each profile, index in site.data.profiles
       +profile-page(profile, (index + 1))

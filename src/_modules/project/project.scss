@@ -11,7 +11,7 @@
 
   &__content {
     width: 100%;
-    opacity: .95;
+    // opacity: .95;
     z-index: 1;
     display: flex;
     justify-content: center;
@@ -145,17 +145,15 @@
   }
 
   &__image {
-    width: 100%;
-    height: calc(100% - 70px);
-    // height: 0;
-    // padding-bottom: 106%;
+    width: 100vw;
+    height: 100vw;
     overflow: hidden;
     position: relative;
 
     @include mq(md) {
-      // padding-bottom: 53.2%;
       overflow: visible;
       position: absolute;
+      height: calc(100% - 70px);
       right: 0;
       top: 70px;
     }

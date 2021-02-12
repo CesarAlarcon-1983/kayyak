@@ -4,7 +4,6 @@ var _ = require('lodash');
 var Header = function() {
   var header = $('.header');
   var body = $('body');
-  var main = $('main');
   var menuOpen = $('.header__hamburguer');
   var openProjectButton = $('.project__more-button');
   var openProfileButton = $('.home__team__profile-button');
@@ -14,9 +13,9 @@ var Header = function() {
   var closeProjectButton = $('.project-page__hero__close-button')
   var closeProfileButton = $('.profile-page__hero__close-button')
   var menuItems = $('.header__item');
-  // var slider = $('.home__portfolio__slider');
+  var activeProject = null;
+  var activeProfile = null;
 
-  // fullpage_api.responsiveSlides.toSections();
 
   if(window.innerWidth < 720 || window.location.pathname === '/contacto/' || window.location.hash === '#investment-philosophy' || window.location.hash === '#team') {
     body.removeClass('-hideOverflow');
@@ -34,33 +33,19 @@ var Header = function() {
       profilesPages.removeClass('-visible');
       projectsContainer.removeClass('-visible')
       body.removeClass('-hideOverflow');
+    } else {
+      activeProfile = null;
+      activeProject = null;
     }
-
-    // if(window.innerWidth > 720) {
-    //   projectsPages.removeClass('-visible');
-    //   profilesPages.removeClass('-visible');
-    //   projectsContainer.removeClass('-visible')
-
-    //   if($(this).children('a').attr('href').includes("investment-philosophy") || $(this).children('a').attr('href').includes("team")) {
-    //     body.removeClass('-hideOverflow');
-    //   }
-    // }
   })
   
-  // $(window).on('scroll', function() {
-  //     if(window.scrollY > 150) {
-  //       header.addClass('-scrolled');
-  //     } else {
-  //       header.removeClass('-scrolled');
-  //     }
-  // })
-
   openProjectButton.on('click', function() {
     var index = $(this).data('target');
     var projectToShow = projectsPages.filter(function(project) {
       return $(this).data('content') == index
     })
 
+    activeProject = index;
     projectsContainer.addClass('-visible')
     projectToShow.addClass('-visible');
     body.addClass('-hideOverflow');
@@ -69,6 +54,7 @@ var Header = function() {
   closeProjectButton.on('click', function()  {
     projectsPages.removeClass('-visible');
     projectsContainer.removeClass('-visible')
+    activeProject = null;
 
     if(window.innerWidth < 720) {
       body.removeClass('-hideOverflow');
@@ -81,6 +67,7 @@ var Header = function() {
       return $(this).data('content') == index
     })
 
+    activeProfile = index;
     projectsContainer.addClass('-visible')
     profileToShow.addClass('-visible');
     body.addClass('-hideOverflow');
@@ -89,101 +76,58 @@ var Header = function() {
   closeProfileButton.on('click', function()  {
     profilesPages.removeClass('-visible');
     projectsContainer.removeClass('-visible')
+    activeProfile = null;
 
-    if(window.innerWidth < 720 || window.scrollY > $('#investment-philosophy')[0].offsetTop) {
+    if(window.innerWidth < 720) {
       body.removeClass('-hideOverflow');
     }
   })
 
-  // function scrollDirection(e) {
-  //   if (e.originalEvent.wheelDelta > 0){
-  //     return 'up'
-  //   } else {
-  //     return 'down'
-  //   }
-  // }
+  var initialScroll = 0;
 
-  // $(document).on('mousewheel', _.debounce(function(e) {
-  //   if(window.innerWidth > 720) {
-  //     var portfolio = e.originalEvent.path.filter(function(target) {
-  //       return $(target)[0].className == 'home__portfolio'
-  //     })
-  
-  //     var purpose = e.originalEvent.path.filter(function(target) {
-  //       return $(target)[0].className == 'home__purpose'
-  //     })
-  
-  //     var investment = e.originalEvent.path.filter(function(target) {
-  //       return $(target)[0].className == 'home__investment-philosophy'
-  //     })
-  
-  //     var slide = e.originalEvent.path.filter(function(target) {
-  //       return target.className == 'home__portfolio__slide'
-  //     })
-  
-  //     var slideIndex = $(slide[0]).children('.project').data('ref');
-  
-  //     if(purpose.length > 0 && scrollDirection(e) == 'down') {
-  //       $('html, body').animate({
-  //         scrollTop: $('.home__portfolio').offset().top + -70
-  //       }, 1000, function() {
-  //         var $target = $('.home__portfolio');
-  //         $target.focus();
-  //       })
-  //     }
-  
-  //     if(portfolio.length > 0 && scrollDirection(e) == 'down') {
-  //       if(slideIndex == 10) {
-  //         body.removeClass('-hideOverflow');
-  //         $('html, body').animate({
-  //           scrollTop: $('.home__investment-philosophy').offset().top + -70
-  //         }, 1000, function() {
-  //           var $target = $('.home__investment-philosophy');
-  //           $target.focus();
-  //         });
-  //       } else {
-  //         slider.slick('slickNext');
-  //       }
-  //     }
-  
-  //     if(portfolio.length > 0 && scrollDirection(e) == 'up') {
-  //       if(slideIndex == 0) {
-  //         $('html, body').animate({
-  //           scrollTop: $('.home__purpose').offset().top + -130
-  //         }, 1000, function() {
-  //           var $target = $('.home__purpose');
-  //           $target.focus();
-  //         });
-  //       } else {
-  //         slider.slick('slickPrev');
-  //       }
-  //     }
-  
-  //     if(investment.length > 0 && scrollDirection(e) == 'up') {
-  //       if(window.scrollY <= $(investment)[0].offsetTop) {
-  //         // body.addClass('-hideOverflow');
-  //         $('html, body').animate({
-  //           scrollTop: $('.home__portfolio').offset().top + -70
-  //         }, 1000, function() {
-  //           var $target = $('.home__portfolio');
-  //           $target.focus();
-  //         });
-  //       }
-  //     }
-  //   }
-  // }, 50))
 
-  var sections = $('.-js-link');
-  var scrollValue;
+  $(document).on('keyup', function(e) {
+    initialScroll = $(projectsPages[activeProject]).scrollTop();
+
+    if(activeProject >= 0) {
+      var projectHeroHeight = $(projectsPages[activeProject]).children('.project-page__hero').height();
+      var projectContentHeight = $(projectsPages[activeProject]).children('.project-page__content').height();
+      var projectFooterHeight = $('.project-page__footer').height();
+      var projectHeight = projectHeroHeight + projectContentHeight + projectFooterHeight + 70;
+      var viewport = body.height();
+      var maxScroll = projectHeight - viewport;
+
+      if(e.key === "ArrowDown" && initialScroll < maxScroll) {
+        projectsPages.scrollTop(initialScroll + 50);
+        initialScroll = initialScroll + 50;
+      }
   
-  sections.on('click', function() {
-    if($(this).attr('href').includes('purpose')) {
-      scrollValue = 130;
-    } else {
-      scrollValue = 70;
+      if(e.key === "ArrowUp" && initialScroll > 0) {
+        projectsPages.scrollTop(initialScroll - 50);
+        initialScroll = initialScroll - 50;
+      }
     }
-  })
 
+    if(activeProfile && activeProfile >= 0) {
+      var profileHeroHeight = $(profilesPages[activeProfile - 1]).children('.profile-page__hero').height();
+      var profileContentHeight = $(profilesPages[activeProfile - 1]).children('.profile-page__content').height();
+      var profileFooterHeight = $('.profile-page__footer').height();
+      var profileHeight = profileHeroHeight + profileContentHeight + profileFooterHeight;
+      var viewport = body.height();
+      var maxScroll = profileHeight - viewport + 70;
+
+      if(e.key === "ArrowDown" && initialScroll < maxScroll) {
+        profilesPages.scrollTop(initialScroll + 50);
+        initialScroll = initialScroll + 50;
+      }
+  
+      if(e.key === "ArrowUp" && initialScroll > 0) {
+        profilesPages.scrollTop(initialScroll - 50);
+        initialScroll = initialScroll - 50;
+        console.log(initialScroll)
+      }
+      }
+  })
 
   $('a[href*="#"]')
   // Remove links that don't actually link to anything
@@ -192,30 +136,29 @@ var Header = function() {
   .not('[href="#0"]')
   .not('[href="#registro"]')
   .not('[href="#login"]')
-  .click(function(event) {
-      // On-page links
-      if (
-          location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
-          &&
-          location.hostname == this.hostname
+  .on('click', function(event) {
+    // On-page links
+    if (
+        location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+        &&
+        location.hostname == this.hostname
       ) {
-        // Figure out element to scroll to
-          var target = $(this.hash);
-          target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-          // Does a scroll target exist?
-          if (target.length) {
-              // Only prevent default if animation is actually gonna happen
-              event.preventDefault();
-
-              $('html, body').animate({
-                  scrollTop: target.offset().top + -scrollValue
-              }, 1000, function() {
-              // Callback after animation
-              // Must change focus!
-                  var $target = $(target);
-                  $target.focus();
-              });
-          }
+      // Figure out element to scroll to
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+        // Does a scroll target exist?
+        if (target.length) {
+          // Only prevent default if animation is actually gonna happen
+          event.preventDefault();
+          $('html, body').animate({
+              scrollTop: target.offset().top + - 70
+          }, 1000, function() {
+          // Callback after animation
+          // Must change focus!
+              var $target = $(target);
+              $target.focus();
+          });
+        }
       }
   });
 };
