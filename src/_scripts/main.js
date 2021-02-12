@@ -4,7 +4,7 @@
 'use strict';
 
 global.$ = global.jQuery;
-//global._ = require('underscore');
+global._ = require('underscore');
 
 var Header = require('../_modules/header/header');
 var Slider = require('../_modules/slider/slider');
@@ -21,14 +21,13 @@ $(function() {
         {
           scrollOverflow: true,
           dragAndMove: true,
-          fixedElements: '.header'
+          fixedElements: '.header',
         },
         $('.project-page__hero__close-button').on('click', function() {
           var projectIndex = $(this).parent().parent().parent().data('content');
 
           fullpage_api.silentMoveTo(`portfolio${projectIndex !== 0 ? ('-' + projectIndex) : ''}`, 0)
         }),
-        console.log($('[data-anchors]')),
         $('.profile-page__hero__close-button').on('click', function() {
           fullpage_api.silentMoveTo('team', 0)
         }),
@@ -37,7 +36,12 @@ $(function() {
           $('.profile-page').removeClass('-visible');
           $('.projects-container').removeClass('-visible')
           fullpage_api.silentMoveTo($(this).attr('href'), 0)
-        })
+        }),
+        $(window).on('mousewheel', _.debounce(function() {
+          if(window.innerWidth > 720) {
+            window.location.href = `/#${fullpage_api.getActiveSection().anchor}`
+          }
+        }, 10))
       );
     }
 });

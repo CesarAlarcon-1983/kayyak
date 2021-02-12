@@ -2,16 +2,16 @@
   {
     "titulo": "Miroculus",
     "texto": [
-      "The three Miroculus co-founders — Alejandro Tocigl, Fay Christodoulou, Jorge Soto — met at Singularity University Global Solutions Program in 2013. With their diverse backgrounds, they were drawn together by a shared desire to develop tools that facilitate high quality, advanced scientific research in their home countries. They began working on microRNA for early cancer detection and in the process of developing this technology the trio realized they were building a flexible, intelligent solution for innumerable applications. With Miro Technology Alejandro, Fay and Jorge are realizing their initial vision of making complex protocols easy and accessible to scientists everywhere.",
+      "The three Miroculus co-founders — Alejandro Tocigl, Fay Christodoulou, Jorge Soto — met at Singularity University Global Solutions Program in 2013. With their diverse backgrounds, they were drawn together by a shared desire to develop tools that facilitate high quality, advanced scientific research in their home countries. They began working on microRNA for early cancer detection and in the process of developing this technology, the trio realized they were building a flexible, intelligent solution for innumerable applications. With Miro Technology Alejandro, Fay and Jorge are realizing their initial vision of making complex protocols easy and accessible to scientists everywhere.",
       "Miro Technology utilizes electromechanical forces to actuate droplets on the surfaces of insulated electrodes, without requiring immersion in oil or direct contact with system electronics. In Miro Technology, nanoliter to microliter droplets containing samples and reagents are manipulated by applying a series of electrical potentials to an array of patterned electrodes coated with a hydrophobic insulator. This technology is distinct from microchannel-based fluidics as it enables precise control of reagents without the need for complex channels, microvalves, or pumps.",
-      "Because the system is compatible with a wide range of reagents, and also allows for an interface with conventional microfluidic channels, a wide range of applications is enabled on the system. - NGS library prep - Synthetic biology - DNA extraction - Combinatorial synthesis"
+      "Because the system is compatible with a wide range of reagents, and also allows for an interface with conventional microfluidic channels, a wide range of applications is enabled on the system such as NGS library prep, synthetic biology, DNA extraction and combinatorial synthesis."
     ],
     "fundadores": [
       "Alejandro Tocigl",
       "Fay Christodoulou",
       "Jorge Soto"
     ],
-    "cita_fundador": "Our dream is that any family in any place of the world can access state of the genomic sequencing technology for a better living",
+    "cita_fundador": "Our dream is that any family in any part of the world will be able to access state-of-the-art genomic sequencing for a better life.",
     "mision": "Miroculus is advancing science and improving lives faster, together. Making the most complex protocols easy and accessible to scientists everywhere.",
     "images": {
       "main": "/images/home/miroculus.jpg",
@@ -26,8 +26,8 @@
   {
     "titulo": "Webdox",
     "texto": [
-      "Webdox is a Software as a Service that automates and digitizes the contracts of medium and large companies in LatAm and the World. Webdox is a platform for teams, clients, and suppliers to work interconnected in the creation, negotiation, approval, signing, and management of contracts.",
-      "The tool generates a high impact on time and costs, along with promoting better, more transparent, and lasting relationships among all stakeholders, through contracts that are created and administered according to the purpose and sense of business, in the manner most efficient and effective possible."
+      "Webdox is a Software as a Service that automates and digitizes the contracts of medium and large companies in LatAm and the World. Webdox is a platform for teams, clients, and suppliers to work interconnectedly in the creation, negotiation, approval, signing, and management of contracts.",
+      "The tool generates a high impact on time and costs, along with promoting better, more transparent, and lasting relationships among all stakeholders. Contracts are created and administered according to the purpose and sense of business, in the manner most efficient and effective possible."
     ],
     "fundadores": ["José Manuel Jiménez"],
     "cita_fundador": "We seek to bring Webdox to 5 continents and to be the world leader in contract lifecycle management.",
@@ -45,13 +45,13 @@
   {
     "titulo": "Xepelin",
     "texto": [
-      "Xepelin offers digital financial services to mid-market corporations and SMEs to manage their working capital. Xepelin leverages technology to offer the best possible conditions and user experience, simplifying and automating decision-making and processes for all actors in the supply chain finance ecosystem.",
-      "Xepelin helps corporations to manage and support their suppliers with financial services and technological tools that allow all actors to have better control of their working capital. Due to its efficient distribution model, Xepelin can reach with its solutions not only the large suppliers but even the smallest ones that have not been covered by traditional financial institutions. The proprietary risk model evaluates an operation in seconds, allowing any client to secure financing the same day.",
-      "Once the supplier is enrolled in the platform, Xepelin delivers capital, education, and free software to manage their finances. All in a simple, secure, and transparent way."
+      "Xepelin offers digital financial services to mid-market corporations and SMEs to manage their working capital. Xepelin leverages technology to offer the best possible conditions and user experience, simplifying and automating decision-making and processes for all the actors in the supply chain financial ecosystem.",
+      "Xepelin helps corporations manage and support their suppliers with financial services and technological tools that allow all actors to have better control of their working capital. Due to its efficient distribution model, Xepelin’s solutions can not only reach large suppliers, but even the smallest ones that have not been served by traditional financial institutions. The proprietary risk model evaluates an operation in seconds, allowing any client to secure financing the same day.",
+      "Once the supplier is enrolled in the platform, Xepelin delivers capital, education, and free software to manage their finances, all in a simple, secure, and transparent way."
     ],
     "fundadores": ["Nicolás De Camino", "Sebastián Kreis"],
     "cita_fundador": "We dream of a market where there are no entry barriers for financing SMEs in Latin America.",
-    "mision": "Xepelin seeks to democratize access to capital and financial inclusion for our clients by creating a simple, fast and secure experience through technology.",
+    "mision": "Xepelin seeks to democratize access to capital and increase financial inclusion for our clients by creating a simple, fast and secure experience through technology.",
     "images": {
       "main":"/images/home/xepelin.jpg",
       "heading": "/images",
@@ -65,10 +65,10 @@
   {
     "titulo": "Foodology",
     "texto": [
-      "Foodology is a Colombian startup dedicated 100% to the delivery business. Through the intensive use of data and technology, Foodology creates virtual restaurant brands and operates them from hidden kitchens, especially for homes. In addition, it seeks to reduce delivery times, increase the quality of the dishes, and offer different high-quality concepts at attractive prices to the public."
+      "Foodology is a Colombian startup dedicated 100% to the delivery business. Through the intensive use of data and technology, Foodology creates virtual restaurant brands and operates them from hidden kitchens."
     ],
     "fundadores": ["Daniela Izquierdo", " Juan Guillermo Azuero"],
-    "cita_fundador": "We seek to be the largest group of virtual restaurants in Latin America, the best FoodTech startup, and the pioneers in creating the best home experience for customers.",
+    "cita_fundador": "We seek to be the largest group of virtual restaurants in Latin America, the best FoodTech startup, and the pioneers in creating the best at-home dining experience.",
     "mision": "Foodology strives to make homes the best restaurant, at the best price.",
     "images": {
       "main":"/images/home/foodology.jpg",
@@ -83,13 +83,13 @@
   {
     "titulo": "Destácame",
     "texto": [
-      "Open digital bank that helps people in Latam to understand better their personal finances, improve their financial wellness and have access to better and more financial products.",
-      "First, it empowers people to take control of their personal finances. Second, it makes available a number of financial tools that helps people improve their wellness. Last, it gives access to more financial products,so that people can achieve their dreams and improve their life quality.",
-      "All of this is done through the use of technology which helps people enhance their experience, integrating alternative information and technology resources to offer efficient and safe solutions.",
-      "On the other side, it allows banks to increase their capacity to serve their customers, customizing and improving their clients' experience."
+      "Destácame is an open digital bank that helps people in Latam better understand their personal finances, improve their financial wellness and have access to more and better financial products.",
+      "On the one side, they empower people to take control of their personal finances. By making available financial tools and access to more financial products, they help people improve their wellness, achieve their dreams and improve their life quality.",
+      "All of this is done through the use of technology, which enhances the clients’ experiences, integrating alternative information and technology resources to offer efficient and safe solutions.",
+      "On the other side, Destácame allows banks to increase their capacity to serve their customers, customizing and improving their clients' experiences."
     ],
     "fundadores": ["Jorge Camus", "Augusto Ruiz Tagle", "Sebastián Ugarte"],
-    "cita_fundador": "Our dream is that every person in Latam achieves its financial wellness, having access to high-quality products at a fair price, focusing on people first.",
+    "cita_fundador": "Our dream is that every person in Latam achieves financial wellness and obtains access to high-quality products at a fair price.",
     "mision": "Helping people to achieve their financial goals through education, tools and access to financial products.",
     "images": {
       "main":"/images/home/destacame.jpg",
@@ -104,8 +104,8 @@
   {
     "titulo": "Migrante",
     "texto": [
-      "Migrante is the first and only financial institution working with immigrants in Chile. Their main goal is to create opportunities for them. As a company they want to bring the most options possible to the immigrant community that keeps growing in the country, and walk with them towards meeting their goals.",
-      "They are certain that inmigration adds to the development of the country, and they want to actively participate to bring better opportunities of integration and development through access to credits and financial advice.",
+      "Migrante is the first and only financial institution working with immigrants in Chile. Their main goal is to create opportunities for them. As a company, they want to bring the most possible options to the immigrant community, which continues to grow in the country, and walk with them towards meeting their goals.",
+      "They are certain that immigration adds to the development of the country, and they want to actively participate to bring better opportunities of integration and development through access to credit and financial advice.",
       "As they say at Migrante - we are many, we are all, we are Migrante."
     ],
     "fundadores": ["Diego Fleischmann", "Ignacio Canals", "Salvador Porta", "Sebastián Ayub", "Benjamin Izikson"],
@@ -125,12 +125,12 @@
     "titulo": "Co-Work Latam",
     "texto": [
       "Co-Work Latam is a pioneer company in the industry of flexible spaces. They have built a platform based on the curation, design, build and operations of world class office spaces that catalyze collaboration, productivity and culture.",
-      "They adapt themselves to the growth and stages of their clients, providing from shared spaces to private offices all of this is sustained by a proven business model of collaboration, cost optimization and versatility. Co-work brings the tools and infrastructure, so that people only have to focus on growing their business.",
-      "Cowork is committed to provide their clients with the best working experience surrounded by an environment of inclusivity, shared experiences and community."
+      "They adapt themselves to the size of their clients, providing options from shared spaces to private offices, all of which is sustained by a proven business model of collaboration, cost optimization and versatility. Cowork Latam brings the tools and infrastructure, so that people only have to focus on growing their business.",
+      "Cowork Latam is committed to provide their clients with the best working experience surrounded by an environment of inclusivity, shared experiences and community."
     ],
     "fundadores": ["Sebastián O´Ryan", " Horacio Justiniano"],
     "cita_fundador": "Unleash the power of collaboration among people and companies.",
-    "mision": "Disrupting the way of doing businesses, by bringing their clients flexibility in a close and collaborative environment.",
+    "mision": "Disrupting the way of doing business, by bringing their clients flexibility in a close and collaborative environment.",
     "images": {
       "main":"/images/home/cowork-latam.jpg",
       "heading": "/images",
@@ -144,8 +144,8 @@
   {
     "titulo": "AgroUrbana",
     "texto": [
-      "AgroUrbana is the first vertical farming company in Latin America. They are a new generation of farmers that seek to give answers to the major challenges of agriculture and a new, demanding and better informed consumer.",
-      "AgroUrbana integrates and develops technology to do more with less and to bring farming to the table, in places unavailable until today. Growing plants in a resilient and consistent way, every day regardless of the season or the weather conditions. They produce vegetables of the highest quality generating the least possible impact by consuming 95% less water, using 99% less soil, without using any synthetic pesticides and by reducing our carbon footprint associated with transportation.",
+      "AgroUrbana is the first vertical farming company in Latin America. They are a new generation of farmers that seek to give answers to the major challenges of agriculture and the new, demanding and better-informed consumer.",
+      "AgroUrbana integrates and develops technology to do more with less and to bring farming to the table, places unavailable until today. They’re committed to growing plants in a resilient and consistent way, every day regardless of the season or the weather conditions. They produce vegetables of the highest quality, generating the least possible impact by consuming 95% less water, using 99% less soil, without using any synthetic pesticides and by reducing our carbon footprint associated with transportation.",
       "AgroUrbana´s job, talent and technology are at the service of the community and the environment."
     ],
     "fundadores": ["Cristián Sjogren", "Pablo Bunster"],
@@ -171,7 +171,7 @@
       "Humatics technology also unlocks new possibilities that will profoundly impact diverse fields such as entertainment, healthcare and the development of smart cities."
     ],
     "fundadores": ["David Mindell"],
-    "cita_fundador": "Our dream is to eliminate blind spots in operations boosting productivity, reducing costs, enhancing benefits and improving safety.",
+    "cita_fundador": "Our dream is to eliminate blind spots in operations, boosting productivity, reducing costs, enhancing benefits and improving safety.",
     "mision": "Revolutionizing how people and machines locate, navigate and collaborate in the connected world.",
     "images": {
       "main":"/images/home/humatics.jpg",
