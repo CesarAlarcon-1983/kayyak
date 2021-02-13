@@ -18,10 +18,11 @@
     opacity: 1;
     pointer-events: all;
 
-    ::-webkit-scrollbar {
-      opacity: 1;
-      width: 10px;
-    }
+  }
+
+  &::-webkit-scrollbar {
+    opacity: 1;
+    width: 5px;
   }
 
   &__hero {
@@ -274,6 +275,17 @@
   }
 
   &.light-blue {
+    &::-webkit-scrollbar-track {
+      background: lighten($lightBlue, 30%);
+      opacity: 1;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: $lightBlue;
+      opacity: 1;
+      border-radius: 5px;
+    }
+  
     #{$p}__hero {
       &__container {
         &:nth-child(1) {
@@ -300,6 +312,17 @@
   }
 
   &.blue {
+    &::-webkit-scrollbar-track {
+      background: lighten($blue, 30%);
+      opacity: 1;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: $blue;
+      opacity: 1;
+      border-radius: 5px;
+    }
+
     #{$p}__hero {
       &__container {
         &:nth-child(1) {
@@ -324,8 +347,20 @@
       }
     }
 
-    }  
+  }  
+ 
   &.purple {
+    &::-webkit-scrollbar-track {
+      background: lighten($purple, 30%);
+      opacity: 1;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: $purple;
+      opacity: 1;
+      border-radius: 5px;
+    }
+
     #{$p}__hero {
       &__container {
         &:nth-child(1) {
@@ -350,8 +385,20 @@
       }
     }
 
-    }  
+  }  
+ 
   &.dark-blue {
+    &::-webkit-scrollbar-track {
+      background: lighten($darkBlue, 30%);
+      opacity: 1;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: $darkBlue;
+      opacity: 1;
+      border-radius: 5px;
+    }
+
     #{$p}__hero {
       &__container {
         &:nth-child(1) {
@@ -376,8 +423,20 @@
       }
     }
 
-    }  
+  }  
+  
   &.mid-blue {
+    &::-webkit-scrollbar-track {
+      background: lighten($midBlue, 30%);
+      opacity: 1;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: $midBlue;
+      opacity: 1;
+      border-radius: 5px;
+    }
+
     #{$p}__hero {
       &__container {
         &:nth-child(1) {
@@ -402,8 +461,20 @@
       }
     }
 
-    }  
+  }  
+
   &.brown {
+    &::-webkit-scrollbar-track {
+      background: lighten($brown, 30%);
+      opacity: 1;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: $brown;
+      opacity: 1;
+      border-radius: 5px;
+    }
+
     #{$p}__hero {
       &__container {
         &:nth-child(1) {
@@ -428,8 +499,20 @@
       }
     }
 
-    }  
+  }  
+
   &.light-purple {
+    &::-webkit-scrollbar-track {
+      background: lighten($lightPurple, 30%);
+      opacity: 1;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: $lightPurple;
+      opacity: 1;
+      border-radius: 5px;
+    }
+
     #{$p}__hero {
       &__container {
         &:nth-child(1) {
@@ -454,8 +537,20 @@
       }
     }
 
-    }  
+  }  
+
   &.turquoise {
+    &::-webkit-scrollbar-track {
+      background: lighten($turquoise, 30%);
+      opacity: 1;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: $turquoise;
+      opacity: 1;
+      border-radius: 5px;
+    }
+
     #{$p}__hero {
       &__container {
         &:nth-child(1) {
@@ -480,8 +575,20 @@
       }
     }
 
-    }  
+  }  
+  
   &.green {
+    &::-webkit-scrollbar-track {
+      background: lighten($green, 30%);
+      opacity: 1;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: $green;
+      opacity: 1;
+      border-radius: 5px;
+    }
+
     #{$p}__hero {
       &__container {
         &:nth-child(1) {
@@ -506,8 +613,20 @@
       }
     }
 
-    }  
+  }  
+
   &.dark-brown {
+    &::-webkit-scrollbar-track {
+      background: lighten($darkBrown, 30%);
+      opacity: 1;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: $darkBrown;
+      opacity: 1;
+      border-radius: 5px;
+    }
+
     #{$p}__hero {
       &__container {
         &:nth-child(1) {
@@ -532,8 +651,20 @@
       }
     }
 
-    }  
+  }  
+ 
   &.lightest-purple {
+    &::-webkit-scrollbar-track {
+      background: lighten($lightestPurple, 30%);
+      opacity: 1;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: $lightestPurple;
+      opacity: 1;
+      border-radius: 5px;
+    }
+
     #{$p}__hero {
       &__container {
         &:nth-child(1) {
@@ -558,4 +689,4 @@
       }
     }
   }
-    }
+}

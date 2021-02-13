@@ -9,13 +9,14 @@ global._ = require('underscore');
 var Header = require('../_modules/header/header');
 var Slider = require('../_modules/slider/slider');
 const fullPageCustom = require('./fullPageCustom');
+var location = window.location.pathname;
 
 $(function() {
-
+    console.log(location)
     new Header();
     new Slider();
 
-    if (window.matchMedia("(min-width: 760px)").matches) {
+    if (window.matchMedia("(min-width: 760px)").matches && location === "/") {
       new fullpage(
         '#fullpage',
         {

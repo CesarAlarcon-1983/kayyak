@@ -10,12 +10,12 @@
     background: $white;
     width: 100%;
     z-index: 10000;
-    height: 70px;
+    height: 72px;
     padding: 22px 15px;
     
     @include mq(md) {
         padding: 0 5vw;
-        // height: 130px;
+        height: 70px;
     }
 
     &__container {
@@ -176,11 +176,15 @@
     }
 
     &.-scrolled {
+        background: $blue;
+
         @include mq(md) {
             height: 70px;
         }
 
         #{$h}__logo {
+            filter: grayscale(100%) brightness(1000%);
+
             @include mq(md) {
                 height: 20px;
             }

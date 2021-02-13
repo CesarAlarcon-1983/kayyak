@@ -1,10 +1,10 @@
 .contacto {
   overflow: hidden;
   padding-top: 70px;
-
-  @include mq(md) {
-    padding-top: 130px;
-  }
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   &__hero {
     overflow: hidden;
@@ -25,9 +25,11 @@
   }
 
   &__details {
+
     &__container {
       margin-bottom: 100px;
     }
+
     &__title,
     &__form-title {
       font-size: 26px;
@@ -71,10 +73,10 @@
     }
 
     &__form-input {
-      margin-top: 50px;
+      // margin-top: 50px;
       width: 100%;
-      border-bottom: 1px solid $corpBlack;
-      height: 50px;
+      // border-bottom: 1px solid $corpBlack;
+      // height: 50px;
       display: flex;
       align-items: center;
 

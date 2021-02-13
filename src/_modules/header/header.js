@@ -17,10 +17,6 @@ var Header = function() {
   var activeProfile = null;
 
 
-  if(window.innerWidth < 720 || window.location.pathname === '/contacto/' || window.location.hash === '#investment-philosophy' || window.location.hash === '#team') {
-    body.removeClass('-hideOverflow');
-  }
-
   menuOpen.on('click', function(){
       header.toggleClass('-open');
       body.toggleClass('-hideOverflow');
@@ -41,7 +37,7 @@ var Header = function() {
   
   openProjectButton.on('click', function() {
     var index = $(this).data('target');
-    var projectToShow = projectsPages.filter(function(project) {
+    var projectToShow = projectsPages.filter(function() {
       return $(this).data('content') == index
     })
 
@@ -85,11 +81,11 @@ var Header = function() {
 
   var initialScroll = 0;
 
-
   $(document).on('keyup', function(e) {
     initialScroll = $(projectsPages[activeProject]).scrollTop();
 
     if(activeProject >= 0) {
+      initialScroll = $(projectsPages[activeProject]).scrollTop();
       var projectHeroHeight = $(projectsPages[activeProject]).children('.project-page__hero').height();
       var projectContentHeight = $(projectsPages[activeProject]).children('.project-page__content').height();
       var projectFooterHeight = $('.project-page__footer').height();
@@ -108,7 +104,9 @@ var Header = function() {
       }
     }
 
-    if(activeProfile && activeProfile >= 0) {
+    if(activeProfile >= 0) {
+      console.log('active profile', activeProfile)
+      initialScroll = $(profilesPages[activeProfile - 1]).scrollTop();
       var profileHeroHeight = $(profilesPages[activeProfile - 1]).children('.profile-page__hero').height();
       var profileContentHeight = $(profilesPages[activeProfile - 1]).children('.profile-page__content').height();
       var profileFooterHeight = $('.profile-page__footer').height();
@@ -126,7 +124,7 @@ var Header = function() {
         initialScroll = initialScroll - 50;
         console.log(initialScroll)
       }
-      }
+    }
   })
 
   $('a[href*="#"]')
