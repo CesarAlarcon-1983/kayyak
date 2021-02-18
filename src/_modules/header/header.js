@@ -16,7 +16,6 @@ var Header = function() {
   var activeProject = null;
   var activeProfile = null;
 
-
   menuOpen.on('click', function(){
       header.toggleClass('-open');
       body.toggleClass('-hideOverflow');
@@ -41,6 +40,7 @@ var Header = function() {
       return $(this).data('content') == index
     })
 
+    window.location.href = $(this).attr('href');
     activeProject = index;
     projectsContainer.addClass('-visible')
     projectToShow.addClass('-visible');
@@ -62,7 +62,7 @@ var Header = function() {
     var profileToShow = profilesPages.filter(function(profile) {
       return $(this).data('content') == index
     })
-
+    window.location.href = $(this).attr('href');
     activeProfile = index;
     projectsContainer.addClass('-visible')
     profileToShow.addClass('-visible');

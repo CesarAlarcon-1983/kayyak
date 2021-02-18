@@ -1,5 +1,5 @@
 mixin project-page(data, index)
-  .project-page(class=data.color data-content=index)
+  .project-page(class=data.color data-content=index id=`/#${data.titulo}`)
     .project-page__hero
       .project-page__hero__container
         .project-page__hero__title=data.titulo

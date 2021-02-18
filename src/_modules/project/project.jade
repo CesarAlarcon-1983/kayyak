@@ -9,6 +9,6 @@ mixin project(data, index, length)
         p.project__quote=`"${data.cita_fundador}"`
         p.project__quoter=data.fundadores[0]
         p.project__mision=data.mision
-        button.project__more-button(data-target=index) See more
+        button.project__more-button(data-target=index href=`/#${data.titulo}`) See more
     .project__image
       img(src=data.images.main)

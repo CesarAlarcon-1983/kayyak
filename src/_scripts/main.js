@@ -12,7 +12,6 @@ const fullPageCustom = require('./fullPageCustom');
 var location = window.location.pathname;
 
 $(function() {
-    console.log(location)
     new Header();
     new Slider();
 
@@ -32,14 +31,45 @@ $(function() {
         $('.profile-page__hero__close-button').on('click', function() {
           fullpage_api.silentMoveTo('team', 0)
         }),
+        $(window).on('popstate',function(e) {      
+          var activeProject = $('.project-page').filter(function() {
+            return $(this).hasClass('-visible');
+          });
+      
+          var activeProfile = $('.profile-page').filter(function() {
+            return $(this).hasClass('-visible');
+          });
+          $('.project-page').removeClass('-visible');
+          $('.profile-page').removeClass('-visible');
+          $('.projects-container').removeClass('-visible')
+          if(activeProject.length > 0) {
+            var activeProjectIndex = activeProject[0].attributes[0].value;
+            // window.history.pushState = `/#portfolio${activeProjectIndex === 0 ? '' : '-' + activeProjectIndex}`;
+            fullpage_api.silentMoveTo(`portfolio${activeProjectIndex === 0 ? '' : ('-' + activeProjectIndex)}`, 0)
+          }
+
+          if(activeProfile.length > 0) {
+            // window.location.href = `team`
+            fullpage_api.silentMoveTo('team', 0)
+          }
+        }),
         $('.-js-link').on('click', function() {
           $('.project-page').removeClass('-visible');
           $('.profile-page').removeClass('-visible');
           $('.projects-container').removeClass('-visible')
           fullpage_api.silentMoveTo($(this).attr('href'), 0)
         }),
-        $(window).on('mousewheel', _.debounce(function() {
-          if(window.innerWidth > 720) {
+        $(window).on('mousewheel', _.debounce(function(e) {
+          var activeModal = $('.projects-container').hasClass('-visible');
+          var isProjectConatainerChild = $(e.target).parents().filter(function() {
+            return $(this).hasClass('projects-container');
+          });
+
+          if(isProjectConatainerChild.length > 0) {
+            e.stopPropagation();
+          }
+
+          if(window.innerWidth > 720 && !activeModal) {
             window.location.href = `/#${fullpage_api.getActiveSection().anchor}`
           }
         }, 10))
